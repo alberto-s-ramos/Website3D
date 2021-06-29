@@ -97,15 +97,32 @@ header {
   }
 }
 
+.gameDetailsLeftContainer {
+  background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 58%, rgba(255,255,255,0) 100%);
+  width: 100%;
+  height: 100%;
+}
+
 .gameDetailsLeft {
   font-size: 10rem;
   color: rgb(255, 255, 255);
-  width: 100%;
+  width: 50%;
+  max-width: 50%;
   height: 100%;
   padding-top: 7rem;
   padding-right: 4rem;
   padding-left: 4rem;
-  background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 58%, rgba(255,255,255,0) 100%);
+  float: right;
+  flex-direction: row;
+  align-items: center;
+
+
+  img {
+    width: 100%;
+    max-width: 80%;
+    text-shadow: 5px 5px 5px #000000;
+    float: left;
+  }
 
   span {
     font-size: 8rem;
@@ -116,45 +133,61 @@ header {
   }
   p {
     font-size: 1.2rem;
-    width: 50%;
+    width: 100%;
     text-align: justify;
     text-shadow: 5px 5px 5px #000000;
     float:right;
-
   }
   @media (max-width: 1440px) {
     font-size: 6rem;
   }
+}
+
+.gameDetailsRightContainer {
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 58%, rgba(255,255,255,0) 100%);
+  width: 100%;
+  height: 100%;
 }
 
 .gameDetailsRight {
   font-size: 10rem;
   color: rgb(255, 255, 255);
-  width: 100%;
+  width: 50%;
+  max-width: 50%;
+  height: 100%;
   padding-top: 7rem;
   padding-right: 4rem;
   padding-left: 4rem;
-  height: 100%;
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 58%, rgba(255,255,255,0) 100%);
+  float: left;
+  flex-direction: row;
+  align-items: center;
+
+  img {
+    width: 100%;
+    max-width: 80%;
+    text-shadow: 5px 5px 5px #000000;
+    float: right;
+  }
 
   span {
     font-size: 8rem;
     width: 100%;
-    text-align: left;
+    text-align: right;
     text-shadow: 5px 5px 5px #000000;
     display: block;
   }
   p {
     font-size: 1.2rem;
-    width: 50%;
+    width: 100%;
     text-align: justify;
     text-shadow: 5px 5px 5px #000000;
-    float:left;
+    float:right;
   }
   @media (max-width: 1440px) {
     font-size: 6rem;
   }
 }
+
 
 .loading {
   position: absolute;

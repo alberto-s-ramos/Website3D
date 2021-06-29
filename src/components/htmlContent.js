@@ -17,7 +17,9 @@ function HTMLContent({ yPosition, gltfPath, bgColor, rightSide, ...props }) {
     }, [inView])
 
     const xPosition = rightSide ? 75 : -75
-    const style = rightSide ? "gameDetailsRight" : "gameDetailsLeft"
+
+    const styleContainer = rightSide ? "gameDetailsRightContainer" : "gameDetailsLeftContainer"
+    const styleChild = rightSide ? "gameDetailsRight" : "gameDetailsLeft"
 
     return(
             <group position={[0, yPosition, 0]} x={xPosition}>
@@ -28,9 +30,10 @@ function HTMLContent({ yPosition, gltfPath, bgColor, rightSide, ...props }) {
 
                     
                 <Html portal={props.domContent} fullscreen>
-                    <div ref={refItem} className={style}>
-                    
-                        <div>{props.children}</div>
+                    <div ref={refItem} className={styleContainer}>
+                        <div className={styleChild}>
+                            <div>{props.children}</div>
+                        </div>
                     </div>
                 </Html>
 

@@ -36,8 +36,8 @@ function App() {
               bgColor={"#242a31"}
               rightSide={false}
               domContent={domContent}>
-                
-                        <span className="title"> MachinaX </span>
+
+                          <img src="./LootMachinaXLogo.png"></img>
                           <p> LootMachinaX was the first 3D game I developed
                               for a Game Design course. The course parameters 
                               were very broad and allowed us the freedom to create 
@@ -64,17 +64,21 @@ function App() {
               rightSide={true}
               domContent={domContent}>
                 
-                          <span className="title"> The Island </span>
-                          <p> Lorem ipsum dolor sit amet,
-                              consectetur adipiscing elit. Integer at tellus convallis,
-                                lobortis risus id, porta leo. Nam placerat sapien ex,
-                                vel consectetur magna pulvinar id. In enim lorem,
-                                  egestas et magna et, mollis fringilla felis. Fusce 
-                                  consectetur tincidunt velit at porta. Vestibulum vel
-                                  accumsan sem. Proin id sagittis ante. Mauris in lacus
-                                    a urna pellentesque molestie sit amet vel metus.
-                                    Quisque at dui pharetra, auctor lorem in, ultrices massa. 
-                                    Aenean tellus tellus, bibendum nec mattis ut, gravida quis orci.
+                          <img src="./TheIslandLogo.png"></img>
+                          <p> The Island was created within the context of a Game Development Methodology
+                              class I took during my master’s degree. Me and my groupmates developed a 3D 
+                              low poly game that explored the basic concepts of survival games, such as 
+                              harvesting materials, hunting animals, gathering various resources, and 
+                              adventuring through the map.
+
+                              This course was structured to give students an overview of the entire game 
+                              development experience, starting nearly from scratches and brainstorming with 
+                              groupmates to competition and domain analysis.
+
+                              One of the best parts of this class was the opportunity to work alongside two 
+                              art students who designed specific assets for our game and helped us improve 
+                              the overall look and feel of the game environment. Teaming up with people from
+                               distinct background and with varied skillsets was an amazing learning experience.
                           </p>
 
               </HTMLContent>
@@ -86,17 +90,24 @@ function App() {
               rightSide={false}
               domContent={domContent}>
                 
-                        <span className="title"> Way Out </span>
-                          <p> Lorem ipsum dolor sit amet,
-                              consectetur adipiscing elit. Integer at tellus convallis,
-                                lobortis risus id, porta leo. Nam placerat sapien ex,
-                                vel consectetur magna pulvinar id. In enim lorem,
-                                  egestas et magna et, mollis fringilla felis. Fusce 
-                                  consectetur tincidunt velit at porta. Vestibulum vel
-                                  accumsan sem. Proin id sagittis ante. Mauris in lacus
-                                    a urna pellentesque molestie sit amet vel metus.
-                                    Quisque at dui pharetra, auctor lorem in, ultrices massa. 
-                                    Aenean tellus tellus, bibendum nec mattis ut, gravida quis orci.
+                          <img src="./WayOutLogo.png"></img>
+                          <p> Way Out is a 3D low poly puzzle game where you play as a golem
+                             who just woke up in a mysterious laboratory and is trying to figure
+                              out the purpose of his existence. To do so, he has to solve puzzles
+                               and challenges in a dungeon-like environment to both progress 
+                              through the map and find clues about himself.
+
+                              This game was developed as a part of my Master’s thesis about attentional 
+                              skills and mental workload in games. The puzzles were designed to test
+                               and map these two aspects.
+
+                              The hidden plot is that a human scientist has become the first to
+                               achieve full conscience transmutation. The puzzles the golem has
+                                to solve were created by the golem himself in his human form, and
+                                 are a simple way to determine if the scientist’s cognitive and 
+                                 reasoning skills have remained intact in his new body.
+
+
                           </p>
 
               </HTMLContent>
