@@ -36,31 +36,29 @@ function App() {
               bgColor={"#242a31"}
               rightSide={false}
               domContent={domContent}>
+                          <img src="./WayOutLogo.png"></img>
+                          <p> Way Out is a 3D low poly puzzle game where you play as a golem
+                             who just woke up in a mysterious laboratory and is trying to figure
+                              out the purpose of his existence. To do so, he has to solve puzzles
+                               and challenges in a dungeon-like environment to both progress 
+                              through the map and find clues about himself.
 
-                          <img src="./LootMachinaXLogo.png"></img>
-                          <p> LootMachinaX was the first 3D game I developed
-                              for a Game Design course. The course parameters 
-                              were very broad and allowed us the freedom to create 
-                              any sort of game within the theme “Ex-Lootbox”. From 
-                              this starting point, I designed an exploration game 
-                              where the goal was to find different loot boxes scattered
-                              around the map while exploring a 3D environment. 
-                              Each of the boxes contained a different augmentation 
-                              (e.g. ‘super jump’, ‘rush’, ‘break crystals’) which 
-                              broadened the player’s capacity to interact with the 
-                              game world.
-                              <br/>
-                              This course and the work I put into the final project 
-                              made me fall in love with game development. Many times 
-                              I found myself excited to get to my desk and work on the game.
+                              This game was developed as a part of my Master’s thesis about attentional 
+                              skills and mental workload in games. The puzzles were designed to test
+                               and map these two aspects.
+
+                              The hidden plot is that a human scientist has become the first to
+                               achieve full conscience transmutation. The puzzles the golem has
+                                to solve were created by the golem himself in his human form, and
+                                 are a simple way to determine if the scientist’s cognitive and 
+                                 reasoning skills have remained intact in his new body.
                           </p>
-
               </HTMLContent>
 
               <HTMLContent 
               yPosition={0} 
-              gltfPath={"/WayOutScene2.gltf"} 
-              bgColor={"#283124"}
+              gltfPath={"/TheIslandScene.gltf"} 
+              bgColor={"#312424"}
               rightSide={true}
               domContent={domContent}>
                 
@@ -85,31 +83,29 @@ function App() {
 
               <HTMLContent 
               yPosition={-250} 
-              gltfPath={"/WayOutScene.gltf"} 
-              bgColor={"#312424"}
+              gltfPath={"/LootMachinaXScene.gltf"} 
+              bgColor={"#283124"}
               rightSide={false}
               domContent={domContent}>
-                
-                          <img src="./WayOutLogo.png"></img>
-                          <p> Way Out is a 3D low poly puzzle game where you play as a golem
-                             who just woke up in a mysterious laboratory and is trying to figure
-                              out the purpose of his existence. To do so, he has to solve puzzles
-                               and challenges in a dungeon-like environment to both progress 
-                              through the map and find clues about himself.
-
-                              This game was developed as a part of my Master’s thesis about attentional 
-                              skills and mental workload in games. The puzzles were designed to test
-                               and map these two aspects.
-
-                              The hidden plot is that a human scientist has become the first to
-                               achieve full conscience transmutation. The puzzles the golem has
-                                to solve were created by the golem himself in his human form, and
-                                 are a simple way to determine if the scientist’s cognitive and 
-                                 reasoning skills have remained intact in his new body.
-
-
+                        <img src="./LootMachinaXLogo.png"></img>
+                          <p> LootMachinaX was the first 3D game I developed
+                              for a Game Design course. The course parameters 
+                              were very broad and allowed us the freedom to create 
+                              any sort of game within the theme “Ex-Lootbox”. From 
+                              this starting point, I designed an exploration game 
+                              where the goal was to find different loot boxes scattered
+                              around the map while exploring a 3D environment. 
+                              Each of the boxes contained a different augmentation 
+                              (e.g. ‘super jump’, ‘rush’, ‘break crystals’) which 
+                              broadened the player’s capacity to interact with the 
+                              game world.
+                              <br/>
+                              This course and the work I put into the final project 
+                              made me fall in love with game development. Many times 
+                              I found myself excited to get to my desk and work on the game.
                           </p>
 
+                          
               </HTMLContent>
 
 

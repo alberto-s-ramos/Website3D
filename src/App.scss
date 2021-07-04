@@ -8,7 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #f15946;
+  background: #2c2c2c;
   transition: 0.4s ease-in-out;
 }
 
@@ -100,7 +100,7 @@ header {
 .gameDetailsLeftContainer {
   background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 58%, rgba(255,255,255,0) 100%);
   width: 100%;
-  height: 100%;
+  height: 110%;
 }
 
 .gameDetailsLeft {
@@ -124,13 +124,6 @@ header {
     float: left;
   }
 
-  span {
-    font-size: 8rem;
-    width: 100%;
-    text-align: right;
-    text-shadow: 5px 5px 5px #000000;
-    display: block;
-  }
   p {
     font-size: 1.2rem;
     width: 100%;
@@ -146,7 +139,7 @@ header {
 .gameDetailsRightContainer {
   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 58%, rgba(255,255,255,0) 100%);
   width: 100%;
-  height: 100%;
+  height: 110%;
 }
 
 .gameDetailsRight {
@@ -169,13 +162,6 @@ header {
     float: right;
   }
 
-  span {
-    font-size: 8rem;
-    width: 100%;
-    text-align: right;
-    text-shadow: 5px 5px 5px #000000;
-    display: block;
-  }
   p {
     font-size: 1.2rem;
     width: 100%;
@@ -187,7 +173,6 @@ header {
     font-size: 6rem;
   }
 }
-
 
 .loading {
   position: absolute;
