@@ -6,13 +6,15 @@ import Header from "./components/header";
 
 //pages
 import GameDevelopment  from "./pages/GameDevelopment";
+import Timeline  from "./pages/Timeline";
+
 
 function App() {
 
   return (
     <>
         <Header />
-        <GameDevelopment/>
+        <Timeline />
     </>
   );
 }
