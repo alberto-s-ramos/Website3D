@@ -8,6 +8,8 @@ import NavBar from "./components/NavBar";
 
 //pages
 import Homepage  from "./pages/Homepage";
+import AboutMe  from "./pages/AboutMe";
+
 import GameDevelopment  from "./pages/GameDevelopment";
 
 
@@ -19,6 +21,7 @@ function App() {
           <NavBar />
           <Switch>
             <Route path="/" exact component={Homepage} />
+            <Route path="/" component={AboutMe} />
             <Route path="/games" component={GameDevelopment} />
           </Switch>
 

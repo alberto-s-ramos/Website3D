@@ -7,6 +7,7 @@ import AnimationCanvas from "../components/AnimationCanvas";
 
 //pages
 import Timeline  from "./Timeline";
+import AboutMe from "./AboutMe";
 
 function Homepage() {
     document.body.style.backgroundImage = "radial-gradient(circle, rgb(70, 101, 116), rgb(28, 63, 78), rgb(11, 33, 37))"
@@ -16,6 +17,7 @@ function Homepage() {
               <HeaderText/>
               <AnimationCanvas/>
             </Suspense>
+            <AboutMe />
             <Timeline />
   
           </div>

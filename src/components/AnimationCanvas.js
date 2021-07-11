@@ -7,7 +7,7 @@ function AnimationCanvas(){
     return (
       <Canvas
         colorManagement={false}
-        camera={{position: [110,10,0], fov: 50}}
+        camera={{position: [115,10,0], fov: 65}}
       >
         <Suspense fallback={null}>
           <Points/>

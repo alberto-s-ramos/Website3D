@@ -13,7 +13,7 @@ function HTMLContent({ yPosition, gltfPath, bgColor, rightSide, ...props }) {
         threshold: 0
     })
     useEffect(() => {
-        inView && (document.body.style.backgroundImage = bgColor)
+        inView && (document.body.style.background = bgColor)
     }, [inView])
 
     const xPosition = rightSide ? 75 : -75
