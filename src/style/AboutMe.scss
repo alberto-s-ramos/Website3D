@@ -1,16 +1,13 @@
-
-
 .aboutMe{
     width: 80%;
     height: 80%;
-    background: rgba(0, 0, 0, 0.568);
+    background: rgba(0, 0, 0, 0.468);
     border-radius: 10px;
     margin:auto auto;
     margin-bottom: 5rem;
     margin-top: 2rem;
-
-
     color: white;
-
+    z-index: 5;
+    backdrop-filter: blur(1px);
 
 }
