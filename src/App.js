@@ -1,21 +1,29 @@
 import React, { Suspense, useEffect, useRef } from "react";
 import "./style/App.scss";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 //Components
-import Header from "./components/header";
+import NavBar from "./components/NavBar";
+
 
 //pages
+import Homepage  from "./pages/Homepage";
 import GameDevelopment  from "./pages/GameDevelopment";
-import Timeline  from "./pages/Timeline";
 
 
 function App() {
 
   return (
-    <>
-        <Header />
-        <Timeline />
-    </>
+    <Router>
+      <div className="app">
+          <NavBar />
+          <Switch>
+            <Route path="/" exact component={Homepage} />
+            <Route path="/games" component={GameDevelopment} />
+          </Switch>
+
+      </div>
+    </Router>
   );
 }
 

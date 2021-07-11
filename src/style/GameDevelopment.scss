@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
 
 .gameDetailsLeftContainer {
-    background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 58%, rgba(255,255,255,0) 100%);
     width: 100%;
     height: 100%;
     align-items: center;
@@ -55,7 +54,6 @@
   }
   
   .gameDetailsRightContainer {
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 58%, rgba(255,255,255,0) 100%);
     width: 100%;
     height: 100%;
   }
@@ -125,3 +123,35 @@
     background: rgba(252, 242, 208, 0.1);
   }
   
+  .scrollArea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+  }
+
+  .loading {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #171717;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .loading-bar-container {
+    width: 100px;
+    height: 32px;
+    background: #272727;
+  }
+  
+  .loading-bar {
+    height: 32px;
+    background: #f15946;
+  }

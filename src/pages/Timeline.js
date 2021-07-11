@@ -7,9 +7,9 @@ import "../style/Timeline.scss";
 
 function Timeline(){
 
-    let workIconStyles = { background: "#06D6A0" }
-    let universityIconStyles = { background: "#FFFF00" }
-
+    let workIconStyles = { background: "rgba(40, 117, 113, 0.8)" }
+    let universityIconStyles = { background: "rgba(25, 146, 89, 0.658)" }
+    let aX = { background: "transparent" }
 
     return (
         <div>
@@ -17,7 +17,6 @@ function Timeline(){
                 {timelineElements.map((element) => {
                         
                         let isWorkIcon = element.isWorkIcon === "work"
-                        console.log(`>>> ${isWorkIcon}`)
 
                         return (
                             <VerticalTimelineElement
