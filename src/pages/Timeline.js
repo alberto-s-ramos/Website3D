@@ -6,11 +6,6 @@ import "../style/Timeline.scss";
 
 
 function Timeline(){
-
-    let workIconStyles = { background: "rgba(40, 117, 113, 0.8)" }
-    let universityIconStyles = { background: "rgba(25, 146, 89, 0.658)" }
-    let aX = { background: "transparent" }
-
     return (
         <div>
             <VerticalTimeline className="timeline">
@@ -23,7 +18,7 @@ function Timeline(){
                                 key={element.key}
                                 date={element.date}
                                 dateClassName="date"
-                                iconStyle={isWorkIcon ? workIconStyles : universityIconStyles}
+                                iconStyle={element.bgColor}
                             >
                                 <h3 className="vertical-timeline-element-title">{element.title}</h3>
                                 <h5 className="vertical-timeline-element-subtitle">{element.location}</h5>

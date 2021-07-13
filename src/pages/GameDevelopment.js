@@ -3,6 +3,8 @@ import "../style/GameDevelopment.scss";
 
 //Components
 import HTMLContent from "../components/htmlContent";
+import Particles from "react-particles-js";
+import particles from "../constants/Particles";
 import { Section } from "../components/section"
 import { Canvas } from "react-three-fiber";
 
@@ -24,6 +26,10 @@ function GameDevelopment() {
   
     return (
       <>  
+        <Particles 
+          className="particles"
+          params={particles}
+        />
         <Canvas
           colorManagement
           camera={{ position:[0, 35, 180], fov:55 }}>
@@ -44,7 +50,7 @@ function GameDevelopment() {
                               <a href={element.githubLink} class="gitHub-btn" target="_blank" data-ol-has-click-handler="">
                                 <i class="fa fa-github"/>GitHub
                               </a>
-                          </HTMLContent>
+                        </HTMLContent>
                       )
                     })
                   }
