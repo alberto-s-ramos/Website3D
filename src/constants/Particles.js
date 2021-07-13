@@ -1,7 +1,7 @@
 let particles = {
     "particles": {
         "number": {
-          "value": 200,
+          "value": 100,
           "density": {
             "enable": true,
             "value_area": 315
@@ -46,10 +46,10 @@ let particles = {
           }
         },
         "line_linked": {
-          "enable": false,
-          "distance": 150,
+          "enable": true,
+          "distance": 80,
           "color": "#ffffff",
-          "opacity": 0.4,
+          "opacity": 0.02,
           "width": 2
         },
         "move": {

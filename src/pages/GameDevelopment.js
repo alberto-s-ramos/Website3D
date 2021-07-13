@@ -42,7 +42,6 @@ function GameDevelopment() {
                         <HTMLContent 
                           yPosition = {element.yPosition}
                           gltfPath = {element.model}
-                          bgColor = {element.bgColor}
                           rightSide = {element.rightSide}
                           domContent = {domContent} >
                               <img src = {element.logo}/>

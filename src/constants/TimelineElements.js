@@ -6,7 +6,7 @@ let timelineElements = [
         isWorkIcon: "work",
         description: "Fullstack Software Engineer",
         date: "Jan 2021 - Present",
-        bgColor: { background: "rgba(40, 117, 113, 0.8)" },
+        bgColor: { background: "rgba(255, 174, 0, 0.35)" },
         icon: "",        
     },
     {
@@ -16,7 +16,7 @@ let timelineElements = [
         isWorkIcon: "",
         description: "MSc in Information Systems and Computer Engineering",
         date: "Sep 2018 - Jan 2021",
-        bgColor: { background: "rgba(25, 146, 89, 0.658)" },
+        bgColor: { background: "rgba(255, 230, 0, 0.35)" },
         icon: "",        
     },
     {
@@ -26,7 +26,7 @@ let timelineElements = [
         isWorkIcon: "",
         description: "MSc in Computer Science - Erasmus Program",
         date: "Sep 2019 - Dec 2019",
-        bgColor: { background: "rgba(25, 146, 89, 0.658)" },
+        bgColor: { background: "rgba(255, 230, 0, 0.35)" },
         icon: "",        
     },
     {
@@ -36,7 +36,7 @@ let timelineElements = [
         isWorkIcon: "",
         description: "BSc in Information Systems and Computer Engineering",
         date: "Sep - Jun 2018",
-        bgColor: { background: "rgba(25, 146, 89, 0.658)" },
+        bgColor: { background: "rgba(255, 230, 0, 0.35)" },
         icon: "",        
     }
 ]

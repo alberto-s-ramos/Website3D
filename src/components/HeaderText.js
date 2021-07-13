@@ -14,9 +14,8 @@ function HeaderText() {
     ]
 
     return (
-        <div className="headerText">
-            <div className="vl"/>
-            <p>
+        <div className="landingPage">
+            <p >
                 My name is <b>Alberto</b> and <br/>
                 I'm a 
                 <Typical
@@ -24,7 +23,7 @@ function HeaderText() {
                     wrapper="b"
                     steps={traits}
                 />  
-                </p>  
+            </p>  
         </div>  
     )
 }
