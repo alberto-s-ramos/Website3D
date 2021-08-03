@@ -8,8 +8,9 @@ import NavBar from "./components/NavBar";
 
 //pages
 import Homepage  from "./pages/Homepage";
-
 import GameDevelopment  from "./pages/GameDevelopment";
+import Timeline  from "./pages/Timeline";
+
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
           <NavBar />
           <Switch>
             <Route path="/" exact component={Homepage} />
-            <Route path="/games" component={GameDevelopment} />
+            <Route path="/games" exact duration={1000}component={GameDevelopment} />
           </Switch>
 
       </div>

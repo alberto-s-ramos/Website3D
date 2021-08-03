@@ -26,7 +26,7 @@ let particles = {
           }
         },
         "opacity": {
-          "value": 0.5,
+          "value": 1,
           "random": true,
           "anim": {
             "enable": true,
@@ -36,12 +36,12 @@ let particles = {
           }
         },
         "size": {
-          "value": 2.5,
+          "value": 3,
           "random": true,
           "anim": {
             "enable": true,
             "speed": 1,
-            "size_min": 0.4,
+            "size_min": 0.8,
             "sync": false
           }
         },

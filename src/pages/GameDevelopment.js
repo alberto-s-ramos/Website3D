@@ -1,19 +1,39 @@
 import React, { Suspense, useEffect, useRef } from "react";
 import "../style/GameDevelopment.scss";
+import Particles from "react-particles-js";
+import { a, useTransition } from "@react-spring/web";
+import { Canvas } from "react-three-fiber";
+import { useProgress } from "drei";
 
 //Components
 import HTMLContent from "../components/htmlContent";
-import Particles from "react-particles-js";
-import particles from "../constants/Particles";
 import { Section } from "../components/section"
-import { Canvas } from "react-three-fiber";
+import state from "../components/state"
 
 // Elements
 import gameElements from "../constants/GameElements";
+import particles from "../constants/Particles";
 
 // Pages
-import state from "../components/state"
 
+function Loader() {
+  const { active, progress } = useProgress();
+  const transition = useTransition(active, {
+    from: { opacity: 0.8, progress: 0.5 },
+    leave: { opacity: 0.2 },
+    update: { progress },
+  });
+  return transition(
+    ({ progress, opacity }, active) =>
+      active && (
+        <a.div className='loading' style={{ opacity }}>
+          <div className='loading-bar-container'>
+            <a.div className='loading-bar' style={{ width: progress }}></a.div>
+          </div>
+        </a.div>
+      )
+  );
+}
 
 function GameDevelopment() {
 
@@ -23,6 +43,7 @@ function GameDevelopment() {
     useEffect( () => 
       void onScroll({target: scrollArea.current}, [])
     )
+    document.body.style.backgroundImage = "radial-gradient(circle, rgb(15, 24, 29), rgb(12, 19, 22), rgb(5, 8, 8))"
   
     return (
       <>  
@@ -47,7 +68,7 @@ function GameDevelopment() {
                               <img src = {element.logo}/>
                               <p>{element.description}</p>
                               <a href={element.githubLink} class="gitHub-btn" target="_blank" data-ol-has-click-handler="">
-                                <i class="fa fa-github"/>GitHub
+                                  GitHub
                               </a>
                         </HTMLContent>
                       )
@@ -57,10 +78,13 @@ function GameDevelopment() {
           </Suspense>
   
         </Canvas>
-            <div className="scrollArea" ref={scrollArea} onScroll={onScroll}>
-              <div style={{position:'sticky', top:0 }} ref={domContent}></div>
-              <div style={{height: `${state.sections * 100}vh`}} ></div>
-            </div>
+
+        <Loader />
+
+        <div className="scrollArea" ref={scrollArea} onScroll={onScroll}>
+            <div style={{position:'sticky', top:0 }} ref={domContent}></div>
+            <div style={{height: `${state.sections * 100}vh`}} ></div>
+          </div>
         </>
     );
   }

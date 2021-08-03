@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Typical from 'react-typical'
 
 function HeaderText() {    
 
     const traits = 
     [
-      ' software engineer.',
+      ' game developer.',
       1000,
-      ' developer.',
+      ' software developer.',
       1000,
       ' game designer.',
       1000,
@@ -22,7 +22,9 @@ function HeaderText() {
                     loop={Infinity}
                     wrapper="b"
                     steps={traits}
-                />  
+                /> <br/>
+                Welcome to my website.
+
             </p>  
         </div>  
     )

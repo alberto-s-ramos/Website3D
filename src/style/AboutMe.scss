@@ -1,12 +1,164 @@
-.aboutMe{
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');/*
+___________________________ CONTAINER / GRID ITEMS ___________________________
+ */
+ .about-grid-container{
     width: 80%;
-    height: 80%;
-    background: rgba(0, 0, 0, 0.468);
-    border-radius: 10px;
-    margin:auto auto;
-    margin-top: 2rem;
+    background-color: rgba(0, 0, 0, 0.39);
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    border-color: rgba(0, 0, 0, 0.36);
     color: white;
-    z-index: 5;
-    backdrop-filter: blur(1px);
     border: 2px solid rgba(255, 255, 255, 0.8);
+    border-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+
+     grid-template-areas:
+        'profilephoto aboutmetitle aboutmetitle aboutmetitle'
+        'profilephoto aboutmetext aboutmetext aboutmetext'
+        'profilephoto cvbtn linkedinbtn none';
+    justify-items: stretch;
+    margin: auto;
+    text-align: justify;
+    padding-bottom: 4em;
+    padding-top: 4em;
+    padding-right: 4em;
+    padding-left: 4em;
+    border-style: solid;
+    border-width: 2px;
+    backdrop-filter: blur(1px);
+
 }
+
+.about-grid-item{
+    text-align: justify;
+    width: 100%;
+    margin: auto auto;
+    color: #FFF;
+    font-family: 'Abel', sans-serif; 
+    font-size: 20px;
+}
+.about-profile-photo img{
+    border-radius: 150px;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.2), 0 16px 40px 0 rgba(0, 0, 0, 0.9);
+    background-size: cover;
+    background-position: center;
+    max-width: 400px;
+    width: 40vh;
+    height: 40vh;
+
+}
+
+/* ---- PHOTO ---- */
+.about-item1{
+   grid-area: profilephoto;
+}
+
+/* ---- TITLE (ABOUT ME) ---- */
+.about-item2{
+    grid-area: aboutmetitle;
+    font-family: 'Abel', sans-serif; 
+    font-size: 50px;
+    text-align: left;
+}
+
+/* ---- TEXT (ABOUT ME) WITH SCROLLBAR ---- */
+.about-item3{
+   grid-area: aboutmetext;
+}
+
+/* ---- BUTTON (DOWNLOAD CV) ---- */
+.about-item4{
+    grid-area: cvbtn;
+    padding-top: 2em;
+    text-align: left;
+}
+/* ---- BUTTON (LINKEDIN) ---- */
+.about-item5{
+    grid-area: linkedinbtn;
+    padding-top: 2em;
+    text-align: right;
+}
+/*
+___________________________ BUTTONS ___________________________
+ */
+
+.about-btn{
+    display:inline-block;
+    font-family: 'Abel', sans-serif; 
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: .5em 0.9em;
+}
+
+        /* Changes sizes when window width increases*/
+        @media (min-width: 80rem) {
+            .gitHub-btn{
+                font-size: 1.3rem;
+            }
+        }
+
+.about-btn{
+    color: #FFFF;
+}
+.about-btn:hover,
+.about-btn .wayOut:focus{
+    background: rgba(255, 255, 255,0.1);
+    color: #FFFFFF;
+}
+
+
+        @media (max-width: 85rem) {
+          
+            .about {
+                height: auto;
+            }
+            .about-grid-container {
+                row-gap: .8rem;
+                padding: 2.5em;
+                grid-template-areas:
+                    'profilephoto profilephoto profilephoto'
+                    'aboutmetitle aboutmetitle aboutmetitle'
+                    'aboutmetext aboutmetext aboutmetext'
+                    'cvbtn  none linkedinbtn';
+                width: 83%;
+            }
+            .about-grid-item {
+                text-align: left;
+            }
+    
+            .about-title {
+                text-align: left;
+                font-size: 40px;
+            }
+            .about-profile-photo img {
+                margin: auto auto;
+                border-radius: 150px;
+                width: 25vh;
+                height: 25vh;
+            }
+
+
+        }
+        @media (max-width: 50rem) {
+      
+ 
+            .button{
+                font-size: 1rem;
+            }
+            .about-grid-container {
+                grid-template-areas:
+                  'profilephoto profilephoto profilephoto'
+                  'aboutmetitle aboutmetitle aboutmetitle'
+                  'aboutmetext aboutmetext aboutmetext'
+                  'cvbtn  cvbtn cvbtn'
+                  'linkedinbtn linkedinbtn linkedinbtn';
+            }
+            .about-item5{
+                padding-top: .1em;
+            }
+        }

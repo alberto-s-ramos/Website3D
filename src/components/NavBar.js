@@ -11,14 +11,11 @@ function NavBar() {
        <div className='logo'/>
         <nav>
           <ul>
-            <Link to="/">
-              <li> <p href=''>About Me</p> </li>
+            <Link to="/" style={{ textDecoration: 'none' }}>
+              <li> <p>Homepage</p> </li>
             </Link>
-            <Link to="/">
-              <li> <p href=''>Experience</p> </li>
-            </Link>
-            <Link to="/games">
-              <li> <p href=''>Game Development</p> </li>
+            <Link to="/games" style={{ textDecoration: 'none' }}>
+              <li> <p>Game Development</p> </li>
             </Link>
           </ul>
         </nav>

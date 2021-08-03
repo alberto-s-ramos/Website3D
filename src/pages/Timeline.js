@@ -4,7 +4,6 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css'
 import "../style/Timeline.scss";
 
-
 function Timeline(){
     return (
         <div>

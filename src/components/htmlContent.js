@@ -24,6 +24,7 @@ function HTMLContent({ yPosition, gltfPath, bgColor, rightSide, ...props }) {
     return(
             <group position={[0, yPosition, 0]} x={xPosition}>
 
+                
                 <mesh ref={ref} position={[xPosition, -10, 0]} scale={[0.9,0.9,0.9]}> 
                         <Model gltfPath={gltfPath}></Model>
                 </mesh>

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari&display=swap');
+
+.social-container {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 25px 50px;
+    margin-top: 5rem;
+    text-align: center;
+    backdrop-filter: blur(1.3px);
+    font-size: 17px;
+    font-family: 'Abel', sans-serif; 
+}
+
+a.social {
+    margin: 0 2rem;
+    transition: transform 250ms;
+    display: inline-block;
+}
+
+a.social:hover {
+    transform: translateY(-4px);
+}
+
+a.linkedin {
+   color: #ffffff;
+}
+
+a.linkedin:hover {
+    box-shadow: 0px 0px 20px rgba(255,255,255,.4);
+    border-radius: 10%;
+ }
+   
+  
+a.github {
+   color: #ffffff;
+}
+a.github:hover {
+    box-shadow: 0px 0px 20px rgba(255,255,255,.4);
+    border-radius: 100%;
+ }
+  
+
+.social-container hr {
+    margin-top: 1.5rem ;
+    width: 40%;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.social-container p {
+    color: rgba(255, 255, 255, 0.35);
+}
