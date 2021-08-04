@@ -40,7 +40,7 @@ ___________________________ CONTAINER / GRID ITEMS ___________________________
     font-size: 20px;
 }
 .about-profile-photo img{
-    border-radius: 150px;
+    border-radius: 200%;
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.2), 0 16px 40px 0 rgba(0, 0, 0, 0.9);
     background-size: cover;
     background-position: center;
@@ -137,7 +137,6 @@ ___________________________ BUTTONS ___________________________
             }
             .about-profile-photo img {
                 margin: auto auto;
-                border-radius: 150px;
                 width: 25vh;
                 height: 25vh;
             }

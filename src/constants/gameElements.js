@@ -2,7 +2,7 @@ let gameElements = [
     {
         logo: "./WayOutLogo.png",
         model: "/WayOutScene3.gltf",
-        description: "Way Out is a 3D low poly puzzle game where you play as a golem who just woke up in a mysterious laboratory and is trying to figure out the purpose of his existence. To do so, he has to solve puzzles and challenges in a dungeon-like environment to both progress through the map and find clues about himself.",
+        description: "Way Out is a 3D low poly puzzle game that I developed for my Master's thesis. In this game, you play as a golem who just woke up in a mysterious laboratory and is trying to figure out the purpose of his existence. He has to solve puzzles and challenges in a dungeon-like environment to both progress through the map and find clues about his origin.",
         bgColor: "#242a31",
         yPosition: 250,
         rightSide: false,
@@ -11,7 +11,7 @@ let gameElements = [
     {
         logo: "./TheIslandLogo.png",
         model: "/TheIslandScene.gltf",
-        description: "The Island was created within the context of a Game Development Methodology class I took during my master’s degree. Me and my groupmates developed a 3D low poly game that explored the basic concepts of survival games, such as harvesting materials, hunting animals, gathering various resources, and adventuring through the map.",
+        description: "The Island was created within the context of a Game Development Methodology class I took during my master’s degree. Me and my groupmates developed a 3D low poly game that explored the basic concepts of survival games, such as harvesting materials, hunting animals, gathering various resources, and venturing through a vast dangerous island.",
         bgColor: "#312424",
         yPosition: 0,
         rightSide: true,
