@@ -11,12 +11,15 @@ import Timeline  from "./Timeline";
 import AboutMe from "../components/AboutMe";
 import Footer from "../components/Footer";
 import Skills from "../components/Skills";
+import Loader from "../components/Loader"
+
 
 function Homepage() {
     document.body.style.backgroundImage = "radial-gradient(circle, rgb(15, 24, 29), rgb(12, 19, 22), rgb(5, 8, 8))"
 
     return (
           <div className="app">
+            <Loader />
             <Particles 
               className="particles"
               params={particles}

@@ -23,8 +23,6 @@ function HeaderText() {
                     wrapper="b"
                     steps={traits}
                 /> <br/>
-                Welcome to my website.
-
             </p>  
         </div>  
     )

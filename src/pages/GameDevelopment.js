@@ -1,38 +1,17 @@
 import React, { Suspense, useEffect, useRef } from "react";
 import "../style/GameDevelopment.scss";
 import Particles from "react-particles-js";
-import { a, useTransition } from "@react-spring/web";
 import { Canvas } from "react-three-fiber";
-import { useProgress } from "drei";
 
 //Components
 import HTMLContent from "../components/htmlContent";
 import { Section } from "../components/section"
 import state from "../components/state"
-
+import Loader from "../components/Loader"
 // Elements
 import gameElements from "../constants/GameElements";
 import particles from "../constants/Particles";
 
-
-function Loader() {
-  const { active, progress } = useProgress();
-  const transition = useTransition(active, {
-    from: { opacity: 0.8, progress: 0.5 },
-    leave: { opacity: 0.2 },
-    update: { progress },
-  });
-  return transition(
-    ({ progress, opacity }, active) =>
-      active && (
-        <a.div className='loading' style={{ opacity }}>
-          <div className='loading-bar-container'>
-            <a.div className='loading-bar' style={{ width: progress }}></a.div>
-          </div>
-        </a.div>
-      )
-  );
-}
 
 function GameDevelopment() {
 
