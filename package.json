@@ -2,7 +2,7 @@
   "name": "wobble-transition",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://albertoramos1997.github.io/Website3D",
+  "homepage": "http://albertoramos1997.github.io/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",

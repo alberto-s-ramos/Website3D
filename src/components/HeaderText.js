@@ -15,7 +15,7 @@ function HeaderText() {
 
     return (
         <div className="landingPage">
-            <p >
+            <p>
                 My name is <b>Alberto</b> and <br/>
                 I'm a 
                 <Typical

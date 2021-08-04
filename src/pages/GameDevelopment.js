@@ -14,7 +14,6 @@ import state from "../components/state"
 import gameElements from "../constants/GameElements";
 import particles from "../constants/Particles";
 
-// Pages
 
 function Loader() {
   const { active, progress } = useProgress();

@@ -51,7 +51,7 @@
     }
     @media (max-width: 720px) {
       p{
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
     }
   
@@ -135,7 +135,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
   }
 
@@ -164,3 +164,25 @@
     border-radius: 5px;
     background: #ffffff;
   }
+
+
+@media (max-width: 90rem) {
+    .gitHub-btn {
+      font-size: 1.6rem;
+    } 
+}
+  
+@media (max-width: 60rem) {
+    .gitHub-btn {
+       font-size: 1.2rem;
+    } 
+   
+}
+
+@media (max-width: 40rem) {
+    .skills-bg{
+        width: 300px;
+        height: 300px;
+    } 
+   
+}
