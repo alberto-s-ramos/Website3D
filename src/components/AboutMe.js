@@ -18,7 +18,7 @@ function AboutMe() {
                         <p>{aboutMe.PARAGRAPH3}</p>
                     </div>
                     <div class="about-grid-item about-item4 ">
-                        <a href="./CV.pdf" class="about-btn" target="_blank"> Resume </a>
+                        <a href="./CurriculumVitae.pdf" class="about-btn" target="_blank"> Resume </a>
                     </div>
             </div>
           </section>
