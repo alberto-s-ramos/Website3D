@@ -35,7 +35,7 @@ let timelineElements = [
         location: "Lisbon, Portugal",
         isWorkIcon: "",
         description: "BSc in Information Systems and Computer Engineering",
-        date: "Sep - Jun 2018",
+        date: "Sep 2015 - Jun 2018",
         bgColor: { background: "rgba(0, 0, 0, 0.9)" },
         icon: "",        
     }
