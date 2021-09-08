@@ -11,7 +11,7 @@ function AboutMe() {
                 <div class="about-grid-item about-profile-photo">
                     <img src="./profile_pic.png" />
                 </div>
-                <h1 class="title about-grid-item about-title">About me</h1>
+                <h1 class="title about-grid-item about-title"><b>About Me</b></h1>
                     <div class="about-grid-item about-description" id="style-5">
                         <p>{aboutMe.PARAGRAPH1}</p>
                         <p>{aboutMe.PARAGRAPH2}</p>

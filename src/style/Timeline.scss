@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manjari&display=swap');
 
 .timeline {
-    padding-top: 12rem;
+    padding-top: 0rem;
     font-family: 'Abel', sans-serif; 
     font-size: 20px;
     color: white;
@@ -21,17 +21,16 @@
   }
 
   .vertical-timeline::before {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.1);
   }
 
   .vertical-timeline-element-icon {
-    
     box-shadow: 0 0 0 2px rgb(255, 255, 255), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
   }
 
   @media (max-width: 90rem) {
     .timeline {
-      padding-top: 5rem;
+      padding-top: 0rem;
     } 
   }
 
