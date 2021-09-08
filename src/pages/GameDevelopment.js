@@ -8,6 +8,8 @@ import HTMLContent from "../components/htmlContent";
 import { Section } from "../components/section"
 import state from "../components/state"
 import Loader from "../components/Loader"
+import Footer from "../components/Footer";
+
 // Elements
 import gameElements from "../constants/GameElements";
 import particles from "../constants/Particles";
@@ -34,7 +36,7 @@ function GameDevelopment() {
           camera={{ position:[0, 35, 180], fov:55 }}>
   
           <Suspense fallback={null}>
-              <Section factor={1.5} offset={1}>
+              <Section factor={1.3} offset={1}>
                   {
                     gameElements.map(element => {
                       return(
@@ -56,7 +58,6 @@ function GameDevelopment() {
           </Suspense>
   
         </Canvas>
-
         <Loader />
 
         <div className="scrollArea" ref={scrollArea} onScroll={onScroll}>

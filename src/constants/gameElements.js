@@ -2,7 +2,7 @@ let gameElements = [
     {
         logo: "./WayOutLogo.png",
         model: "/WayOutScene3.gltf",
-        description: "Way Out is a 3D low poly puzzle game that I developed for my Master's thesis. In this game, you play as a golem who just woke up in a mysterious laboratory and is trying to figure out the purpose of his existence. He has to solve puzzles and challenges in a dungeon-like environment to both progress through the map and find clues about his origin.",
+        description: "Way Out is a 3D low poly puzzle game that I developed for my Master's thesis. In this game, the player embodies a golem that just woke up in a mysterious laboratory and is trying to figure out the purpose of his existence. Throughout the game, the player has to solve puzzles and challenges in a dungeon-like environment.",
         bgColor: "#242a31",
         yPosition: 250,
         rightSide: false,
@@ -11,7 +11,7 @@ let gameElements = [
     {
         logo: "./TheIslandLogo.png",
         model: "/TheIslandScene.gltf",
-        description: "The Island was created within the context of a Game Development Methodology class I took during my master’s degree. Me and my groupmates developed a 3D low poly game that explored the basic concepts of survival games, such as harvesting materials, hunting animals, gathering various resources, and venturing through a vast dangerous island.",
+        description: "The Island was created within the context of a Game Development Methodology class I took during my Master’s degree. Me and my groupmates developed a 3D low poly game that explored the basic concepts of survival games - such as harvesting materials, hunting animals, gathering various resources, and venturing through a vast dangerous island.",
         bgColor: "#312424",
         yPosition: 0,
         rightSide: true,
@@ -20,7 +20,7 @@ let gameElements = [
     {
         logo: "./LootMachinaXLogo.png",
         model: "/LootMachinaXScene.gltf",
-        description: "LootMachinaX was the first 3D game I developed for a Game Design course. I designed and developed an exploration game where the goal was to find different loot boxes scattered around the map while exploring a 3D environment - each of the boxes contained a different augmentation which broadened the player’s capacity to interact with the environment.",
+        description: "LootMachinaX was the first 3D game I developed. It is an exploration game where the player has to venture through a wrecked world to find loot boxes that contain special augmentations. Each augmentation gives the player a new skill, allowing the discovery of previously unexplored parts of the map.",
         bgColor: "#283124",
         yPosition: -250,
         rightSide: false,
