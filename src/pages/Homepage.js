@@ -19,7 +19,6 @@ function Homepage() {
 
     return (
           <div className="app">
-            <Loader />
             <Particles 
               className="particles"
               params={particles}
@@ -29,6 +28,7 @@ function Homepage() {
             <Timeline />
             <Skills />
             <Footer />
+            <Loader />
 
           </div>
     );
