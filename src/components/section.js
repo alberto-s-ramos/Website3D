@@ -12,7 +12,7 @@ function Section({ children, offset, factor, ...props }) {
   useFrame(() => {
     const curY = ref.current.position.y;
     const curTop = state.top.current / aspect;
-    ref.current.position.y = lerp(curY, (curTop / state.zoom) * factor, 0.1);
+    ref.current.position.y = lerp(curY, (curTop / state.zoom) * factor, 0.2);
   });
   return (
     <offsetContext.Provider value={offset}>
@@ -31,9 +31,9 @@ function useSection() {
   const viewportHeight = viewport.height;
   const canvasWidth = viewportWidth / zoom;
   const canvasHeight = viewportHeight / zoom;
-  const mobile = size.width < 700;
-  const margin = canvasWidth * (mobile ? 0.2 : 0.1);
-  const contentMaxWidth = canvasWidth * (mobile ? 0.8 : 0.6);
+  const mobile = size.width < 900;
+  const margin = canvasWidth * (mobile ? 0.9 : 0.1);
+  const contentMaxWidth = canvasWidth * (mobile ? 0.2 : 0.6);
   const sectionHeight = canvasHeight;
   const aspect = size.height / viewportHeight;
   return {

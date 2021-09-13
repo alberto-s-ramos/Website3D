@@ -16,7 +16,6 @@
   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 58%, rgba(0,0,0,0) 100%);
 }
 
-
 /*
  Game details content: Left and Right
 */
@@ -36,28 +35,10 @@
   
 .gameDetailsLeft {
   float: right;
-
-  img, .gitHub-btn{
-    float: left;
-  }
-  
-  p {
-    float: left;
-    padding-right: 6em;
-  }
 }
   
 .gameDetailsRight {
   float: left;
-  
-  img, .gitHub-btn {
-    float: right;
-  }
-  
-  p {
-    float: right;
-    padding-left: 6em;
-  }
 }
 
 .gameDetailsRight p, .gameDetailsLeft p {
@@ -66,7 +47,8 @@
   font-size: 1.9rem;
   text-align: justify;
   text-shadow: 5px 5px 5px #000000;
-  padding-bottom: 1em;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .gameDetailsRight img, .gameDetailsLeft img {
@@ -88,10 +70,11 @@
   border-style: solid;
   border-radius: 10px;
   padding: .25em;
+  backdrop-filter: blur(3px);
 }
   
 .gameDetailsRight .gitHub-btn:hover, .gameDetailsLeft .gitHub-btn:hover {
-  background: rgba(252, 242, 208, 0.1);
+  background: rgba(252, 242, 208, 0.2);
 }
 
 .scrollArea {
@@ -160,5 +143,72 @@
 @media (max-width: 720px) {
   .gameDetailsRight p, .gameDetailsLeft p {
     font-size: 1rem;
+  }
+}
+
+@media(max-width: 900px) {
+
+  .gameDetailsLeftContainer, .gameDetailsRightContainer {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%);
+    height: 100%;
+  }
+
+  /*
+  Game details content: Left and Right
+  */
+  .gameDetailsLeft, .gameDetailsRight {
+    padding-top: 0rem;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+  }
+    
+  .gameDetailsLeft, .gameDetailsRight {
+    float: none;
+  }
+
+  .gameDetailsLeft div, .gameDetailsRight div {
+    backdrop-filter: blur(4px);
+    box-shadow: 0 18px 18px 0 rgba(0, 0, 0, 0.2), 0 60px 50px 0 rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+  }
+
+
+  .gameDetailsRight p, .gameDetailsLeft p {
+    font-size: 1rem;
+    float: none;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 1rem;
+    padding-top: 0rem;
+  }
+
+  .gameDetailsRight img, .gameDetailsLeft img {
+    width: 70%;
+    max-width: 100%;
+    float: none;
+  }
+    
+  .gameDetailsRight .gitHub-btn, .gameDetailsLeft .gitHub-btn  {
+    font-size: 1.2rem;
+    width: 30%;
+    height: 25%;
+    float: none;
+  }
+}
+
+@media(max-width: 400px) {
+
+  .gameDetailsRight img, .gameDetailsLeft img {
+    width: 80%;
+    max-width: 100%;
+    float: none;
+  }
+  .gameDetailsRight p, .gameDetailsLeft p {
+    font-size: 1rem;
+    float: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }

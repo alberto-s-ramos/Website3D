@@ -14,7 +14,7 @@ function NavBar() {
               <li> <p>Homepage</p> </li>
             </Link>
             <Link to="/games" style={{ textDecoration: 'none' }}>
-              <li> <p>Game Development</p> </li>
+              <li> <p>Games</p> </li>
             </Link>
           </ul>
         </nav>
