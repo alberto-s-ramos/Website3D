@@ -5,9 +5,11 @@ function HeaderText() {
 
     const traits = 
     [
+      ' frontend developer.',
+      1000,
       ' game developer.',
       1000,
-      ' software developer.',
+      ' fullstack developer.',
       1000,
       ' game designer.',
       1000,
