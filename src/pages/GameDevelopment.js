@@ -6,7 +6,7 @@ import { useMediaQuery } from 'react-responsive';
 
 
 //Components
-import HTMLContent from "../components/htmlContent";
+import Game from "../components/Game";
 import { Section } from "../components/section"
 import state from "../components/state"
 import Loader from "../components/Loader"
@@ -30,6 +30,22 @@ function GameDevelopment() {
     const canvasFov = isMobile ? 65 : 50
     const sectionFactor = isMobile ? 1.3 : 1.5
 
+    const gameComponents = gameElements.map(element => 
+        <Game 
+          yPosition = {element.yPosition}
+          gltfPath = {element.model}
+          rightSide = {element.rightSide}
+          domContent = {domContent} >
+              <center>
+                <img src = {element.logo}/>
+                <p>{element.description}</p>
+                <a href={element.githubLink} class="gitHub-btn" target="_blank" data-ol-has-click-handler="">
+                    GitHub
+                </a>
+              </center>
+        </Game>
+      )
+
     return (
       <>  
         <Particles 
@@ -41,31 +57,11 @@ function GameDevelopment() {
           colorManagement
           camera={{ position:[0, 55, 180], fov: canvasFov }}
           height={800}>
-  
           <Suspense fallback={null}>
               <Section factor={sectionFactor} offset={1}>
-                  {
-                    gameElements.map(element => {
-                      return(
-                        <HTMLContent 
-                          yPosition = {element.yPosition}
-                          gltfPath = {element.model}
-                          rightSide = {element.rightSide}
-                          domContent = {domContent} >
-                              <center>
-                                <img src = {element.logo}/>
-                                <p>{element.description}</p>
-                                <a href={element.githubLink} class="gitHub-btn" target="_blank" data-ol-has-click-handler="">
-                                    GitHub
-                                </a>
-                              </center>
-                        </HTMLContent>
-                      )
-                    })
-                  }
+                  {gameComponents}
               </Section>
           </Suspense>
-  
         </Canvas>
 
         <Loader />

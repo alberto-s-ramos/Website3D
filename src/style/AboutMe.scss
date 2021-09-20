@@ -25,6 +25,7 @@
     border-style: solid;
     backdrop-filter: blur(2px);
     margin-bottom: 10em;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .about-grid-container:hover{

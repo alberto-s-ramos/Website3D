@@ -7,7 +7,7 @@ let timelineElements = [
         description: "Fullstack Software Engineer",
         date: "Jan 2021 - Present",
         bgColor: { background: "rgba(0, 0, 0, 0.9)" },
-        icon: "",        
+        icon: "talkdesk",        
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ let timelineElements = [
         description: "MSc in Information Systems and Computer Engineering",
         date: "Sep 2018 - Jan 2021",
         bgColor: { background: "rgba(0, 0, 0, 0.9)" },
-        icon: "./tdlogo.png",        
+        icon: "ist",        
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ let timelineElements = [
         description: "MSc in Computer Science - Erasmus Program",
         date: "Sep 2019 - Dec 2019",
         bgColor: { background: "rgba(0, 0, 0, 0.9)" },
-        icon: "",        
+        icon: "aalto",        
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ let timelineElements = [
         description: "BSc in Information Systems and Computer Engineering",
         date: "Sep 2015 - Jun 2018",
         bgColor: { background: "rgba(0, 0, 0, 0.9)" },
-        icon: "",        
+        icon: "iscte",        
     }
 ]
 
