@@ -1,7 +1,6 @@
 import React from 'react'
 import timelineElements from "../constants/TimelineElements";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
-import { ReactComponent as SchoolIcon} from '../assets/Aalto.svg'
 import { ReactComponent as WorkIcon} from '../assets/work.svg'
 
 import { ReactComponent as TalkdeskIcon} from '../assets/Talkdesk.svg'
@@ -34,8 +33,6 @@ function Timeline(){
             <VerticalTimeline className="timeline">
                 {timelineElements.map((element) => {
                         
-                        let isWorkIcon = element.isWorkIcon === "work"
-
                         return (
                             <VerticalTimelineElement
                                 key={ element.key }

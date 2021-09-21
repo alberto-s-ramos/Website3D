@@ -44,16 +44,16 @@
 .gameDetailsRight p, .gameDetailsLeft p {
   font-family: 'Abel', sans-serif; 
   color: rgba(252, 242, 208, 0.863);
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   text-align: justify;
   text-shadow: 5px 5px 5px #000000;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .gameDetailsRight img, .gameDetailsLeft img {
   width: 100%;
-  max-width: 80%;
+  max-width: 70%;
 }
   
 .gameDetailsRight .gitHub-btn, .gameDetailsLeft .gitHub-btn  {
@@ -137,7 +137,7 @@
 
 @media (max-width: 1440px) {
   .gameDetailsRight p, .gameDetailsLeft p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 720px) {
@@ -179,8 +179,8 @@
     font-size: 1rem;
     float: none;
     text-align: left;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     padding-bottom: 1rem;
     padding-top: 0rem;
   }
@@ -209,7 +209,7 @@
   .gameDetailsRight p, .gameDetailsLeft p {
     font-size: 1rem;
     float: none;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }

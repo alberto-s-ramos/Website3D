@@ -4,7 +4,6 @@ import { useMediaQuery } from 'react-responsive';
 
 import * as aboutMe from "../constants/AboutMeElements";
 
-
 function AboutMe() {
 
   const aboutMeTitleFooterMobile = "</AboutMe>"
@@ -17,7 +16,7 @@ function AboutMe() {
           <section class="about" id="aboutsection">
             <div class="about-grid-container">
                 <div class="about-grid-item about-profile-photo">
-                    <img src="./profile_pic.png" />
+                    <img src="./profile_pic.png"/>
                 </div>
                 <h1 class="title about-grid-item about-title"><b>{aboutMeTitle}</b></h1>
                     <div class="about-grid-item about-description" id="style-5">
@@ -29,7 +28,6 @@ function AboutMe() {
                         <a href="./CurriculumVitae.pdf" class="about-btn" target="_blank"> Resume </a>
                     </div>
                 <h1 class="title about-grid-item about-title-footer"><b>{aboutMeTitleFooterMobile}</b></h1>
-   
             </div>
           </section>
       </div>

@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useRef } from "react";
+import React from "react";
 import "./style/App.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -9,8 +9,6 @@ import NavBar from "./components/NavBar";
 //pages
 import Homepage  from "./pages/Homepage";
 import GameDevelopment  from "./pages/GameDevelopment";
-import Timeline  from "./pages/Timeline";
-
 
 
 function App() {

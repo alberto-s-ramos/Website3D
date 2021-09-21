@@ -7,10 +7,17 @@
     height: 600px;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 100%;
-    backdrop-filter: blur(1.3px);
-    border: 3px solid rgba(255, 255, 255, 0.8);
-    margin:0 auto;
+    backdrop-filter: blur(2px);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    margin: 0 auto;
+    transition: box-shadow 0.3s ease-in-out;
 }
+
+.skills-bg:hover{
+    box-shadow: 0 0px 30px 0 rgba(255, 255, 255, 0.2), 0px 0px 0px 0 rgba(255, 255, 255, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
 .skills-container img{
     background-size: cover;
     background-position: center;
@@ -39,41 +46,4 @@
         height: 300px;
     } 
    
-}
-
-
-/* Explanation in JS tab */
-
-/* Cool font from Google Fonts! */
-@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
-
-body {
-	margin: 0px;
-}
-
-#skills-container {
-	/* Center the text in the viewport. */
-	position: absolute;
-	margin: auto;
-	width: 100vw;
-	height: 80pt;
-	top: 0;
-	bottom: 0;
-	
-	/* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
-	filter: url(#threshold) blur(0.6px);
-}
-
-/* Your average text styling */
-#text1, #text2 {
-	position: absolute;
-	width: 100%;
-	display: inline-block;
-	
-	font-family: 'Raleway', sans-serif;
-	font-size: 80pt;
-	
-	text-align: center;
-	
-	user-select: none;
 }
