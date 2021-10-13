@@ -40,3 +40,11 @@ header {
       }
     }
   }
+
+  @media (max-width: 85rem) {
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
