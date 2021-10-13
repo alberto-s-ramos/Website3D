@@ -3,6 +3,8 @@
 .about-grid-container{
     width: 80%;
     max-width: 1175px;
+    background: rgba(25,0,47, 0.5);
+    background: linear-gradient(90deg, rgba(55, 69, 87, 0.4) 0%, rgba(28, 38, 51, 0.4) 56%, rgba(25, 34, 48, 0.5) 100%);
     background-color: rgba(0, 0, 0, 0.39);
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
     border-color: rgba(0, 0, 0, 0.36);
@@ -16,8 +18,7 @@
     grid-template-areas:
         'profilephoto aboutmetitle'
         'profilephoto aboutmetext'
-        'profilephoto cvbutton'
-        'profilephoto abotmetitlefooter';
+        'profilephoto cvbutton';
     justify-items: stretch;
     margin: auto;
     text-align: justify;
@@ -39,7 +40,6 @@
     margin: auto auto;
     color: #FFF;
     font-family: 'Abel', sans-serif; 
-    font-size: 18px;
 }
 
 .about-profile-photo {
@@ -80,7 +80,7 @@
 
 .about-description p{
     margin: 0;
- }
+}
 
 .about-cv-button{
     grid-area: cvbutton;
@@ -101,10 +101,11 @@
     padding: .3em 0.5em;
     width: 155px;
     text-align: center;
+    background: rgba(255, 255, 255,0.1);
 }
 
 .about-btn:hover{
-    background: rgba(255, 255, 255,0.1);
+    background: rgba(255, 255, 255,0.2);
     color: #FFFFFF;
 }
 
@@ -136,8 +137,9 @@
     }
 
     .about-profile-photo img {
-        width: 0vh;
-        height: 0vh;
+        width: 0px;
+        height: 0px;
+        display: none;
     }
     .about-description {
         font-size: 1.2rem;

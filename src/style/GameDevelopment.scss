@@ -9,11 +9,11 @@
 }
 
 .gameDetailsLeftContainer {
-  background: linear-gradient(-90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 58%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(-90deg, rgb(17, 23, 26) 0%, rgb(34, 51, 58) 0%, rgba(0,0,0,0) 58%, rgba(0,0,0,0) 100%);
 }
 
 .gameDetailsRightContainer {
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 58%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(90deg, rgb(17, 23, 26) 0%, rgb(34, 51, 58) 0%, rgba(0,0,0,0) 58%, rgba(0,0,0,0) 100%);
 }
 
 /*
@@ -44,7 +44,7 @@
 .gameDetailsRight p, .gameDetailsLeft p {
   font-family: 'Abel', sans-serif; 
   color: rgba(252, 242, 208, 0.863);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: justify;
   text-shadow: 5px 5px 5px #000000;
   padding-left: 6rem;
@@ -59,10 +59,10 @@
 .gameDetailsRight .gitHub-btn, .gameDetailsLeft .gitHub-btn  {
   font-family: 'Abel', sans-serif; 
   display: inline-block;
-  font-size: 1.9rem;
+  font-size: 1.3rem;
   color: rgba(252, 242, 208, 0.863);
   background: rgba(252, 242, 208, 0.05);
-  width: 40%;
+  width: 20%;
   height: 25%;
   text-align: center;
   text-decoration: none;
@@ -169,7 +169,7 @@
   }
 
   .gameDetailsLeft div, .gameDetailsRight div {
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(0deg, rgb(25, 31, 37) 0%, rgb(30, 39, 48) 50%, rgba(0,0,0,0) 100%, rgba(0,0,0,0) 100%);
     border-radius: 0px 0px 10px 10px;
     padding: 1rem;
     padding-bottom: 2rem;
