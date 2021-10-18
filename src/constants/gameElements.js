@@ -1,7 +1,7 @@
 let gameElements = [
     {
         logo: "./WayOutLogo.png",
-        model: "/WayOutScene3.gltf",
+        model: "/WayOutScene.gltf",
         description: "Way Out is a 3D low poly puzzle game that I developed for my Master's thesis. In this game, the player embodies a golem that just woke up in a mysterious laboratory and is trying to figure out the purpose of his existence. Throughout the game, the player has to solve puzzles and challenges in a dungeon-like environment.",
         bgColor: "#242a31",
         yPosition: 250,

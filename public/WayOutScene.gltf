@@ -19,21 +19,10 @@
                         0.9430345892906189,
                         1
                     ],
-                    "intensity" : 1,
+                    "intensity" : 3,
                     "type" : "point",
                     "range" : 92.12999725341797,
                     "name" : "Spot"
-                },
-                {
-                    "color" : [
-                        1,
-                        0.9015335440635681,
-                        0.4162498414516449
-                    ],
-                    "intensity" : 2500000000,
-                    "type" : "point",
-                    "range" : 92.12999725341797,
-                    "name" : "Spot.001"
                 },
                 {
                     "color" : [
@@ -199,11 +188,11 @@
                 49,
                 50,
                 52,
-                54,
+                53,
                 55,
-                57,
+                56,
                 58,
-                60,
+                59,
                 61,
                 63,
                 65,
@@ -213,17 +202,16 @@
                 73,
                 75,
                 77,
+                78,
                 79,
                 80,
                 81,
                 82,
                 83,
-                84,
                 85,
+                86,
                 87,
-                88,
-                89,
-                90
+                88
             ]
         }
     ],
@@ -1326,42 +1314,6 @@
             ]
         },
         {
-            "extensions" : {
-                "KHR_lights_punctual" : {
-                    "light" : 1
-                }
-            },
-            "name" : "Spot.001_Orientation",
-            "rotation" : [
-                -0.7071067690849304,
-                0,
-                0,
-                0.7071067690849304
-            ]
-        },
-        {
-            "children" : [
-                53
-            ],
-            "name" : "Spot.001",
-            "rotation" : [
-                0.24752993881702423,
-                -0.21457691490650177,
-                -0.02402419224381447,
-                0.9445149898529053
-            ],
-            "scale" : [
-                10.32214641571045,
-                10.32214641571045,
-                10.32214641571045
-            ],
-            "translation" : [
-                10.86506175994873,
-                116.59778594970703,
-                129.05511474609375
-            ]
-        },
-        {
             "mesh" : 20,
             "name" : "Candles",
             "rotation" : [
@@ -1384,7 +1336,7 @@
         {
             "extensions" : {
                 "KHR_lights_punctual" : {
-                    "light" : 2
+                    "light" : 1
                 }
             },
             "name" : "CandlesGlow_Orientation",
@@ -1397,7 +1349,7 @@
         },
         {
             "children" : [
-                56
+                54
             ],
             "name" : "CandlesGlow",
             "rotation" : [
@@ -1440,7 +1392,7 @@
         {
             "extensions" : {
                 "KHR_lights_punctual" : {
-                    "light" : 3
+                    "light" : 2
                 }
             },
             "name" : "CandlesGlow.001_Orientation",
@@ -1453,7 +1405,7 @@
         },
         {
             "children" : [
-                59
+                57
             ],
             "name" : "CandlesGlow.001",
             "rotation" : [
@@ -1496,7 +1448,7 @@
         {
             "extensions" : {
                 "KHR_lights_punctual" : {
-                    "light" : 4
+                    "light" : 3
                 }
             },
             "name" : "CandlesGlow.002_Orientation",
@@ -1509,7 +1461,7 @@
         },
         {
             "children" : [
-                62
+                60
             ],
             "name" : "CandlesGlow.002",
             "rotation" : [
@@ -1532,7 +1484,7 @@
         {
             "extensions" : {
                 "KHR_lights_punctual" : {
-                    "light" : 5
+                    "light" : 4
                 }
             },
             "name" : "CandlesGlow.003_Orientation",
@@ -1545,7 +1497,7 @@
         },
         {
             "children" : [
-                64
+                62
             ],
             "name" : "CandlesGlow.003",
             "rotation" : [
@@ -1568,7 +1520,7 @@
         {
             "extensions" : {
                 "KHR_lights_punctual" : {
-                    "light" : 6
+                    "light" : 5
                 }
             },
             "name" : "CandlesGlow.004_Orientation",
@@ -1581,7 +1533,7 @@
         },
         {
             "children" : [
-                66
+                64
             ],
             "name" : "CandlesGlow.004",
             "rotation" : [
@@ -1604,7 +1556,7 @@
         {
             "extensions" : {
                 "KHR_lights_punctual" : {
-                    "light" : 7
+                    "light" : 6
                 }
             },
             "name" : "CandlesGlow.005_Orientation",
@@ -1617,7 +1569,7 @@
         },
         {
             "children" : [
-                68
+                66
             ],
             "name" : "CandlesGlow.005",
             "rotation" : [
@@ -1640,7 +1592,7 @@
         {
             "extensions" : {
                 "KHR_lights_punctual" : {
-                    "light" : 8
+                    "light" : 7
                 }
             },
             "name" : "CandlesGlow.006_Orientation",
@@ -1653,7 +1605,7 @@
         },
         {
             "children" : [
-                70
+                68
             ],
             "name" : "CandlesGlow.006",
             "rotation" : [
@@ -1676,7 +1628,7 @@
         {
             "extensions" : {
                 "KHR_lights_punctual" : {
-                    "light" : 9
+                    "light" : 8
                 }
             },
             "name" : "CandlesGlow.007_Orientation",
@@ -1689,7 +1641,7 @@
         },
         {
             "children" : [
-                72
+                70
             ],
             "name" : "CandlesGlow.007",
             "rotation" : [
@@ -1712,7 +1664,7 @@
         {
             "extensions" : {
                 "KHR_lights_punctual" : {
-                    "light" : 10
+                    "light" : 9
                 }
             },
             "name" : "CandlesGlow.008_Orientation",
@@ -1725,7 +1677,7 @@
         },
         {
             "children" : [
-                74
+                72
             ],
             "name" : "CandlesGlow.008",
             "rotation" : [
@@ -1748,7 +1700,7 @@
         {
             "extensions" : {
                 "KHR_lights_punctual" : {
-                    "light" : 11
+                    "light" : 10
                 }
             },
             "name" : "CandlesGlow.009_Orientation",
@@ -1761,7 +1713,7 @@
         },
         {
             "children" : [
-                76
+                74
             ],
             "name" : "CandlesGlow.009",
             "rotation" : [
@@ -1784,7 +1736,7 @@
         {
             "extensions" : {
                 "KHR_lights_punctual" : {
-                    "light" : 12
+                    "light" : 11
                 }
             },
             "name" : "CandlesGlow.010_Orientation",
@@ -1797,7 +1749,7 @@
         },
         {
             "children" : [
-                78
+                76
             ],
             "name" : "CandlesGlow.010",
             "rotation" : [
@@ -1922,7 +1874,7 @@
         {
             "extensions" : {
                 "KHR_lights_punctual" : {
-                    "light" : 13
+                    "light" : 12
                 }
             },
             "name" : "Orb Glow.001_Orientation",
@@ -1935,7 +1887,7 @@
         },
         {
             "children" : [
-                86
+                84
             ],
             "name" : "Orb Glow.001",
             "rotation" : [
