@@ -16,26 +16,12 @@ a.social {
     margin-top: 1rem;
     transition: transform 250ms;
     display: inline-block;
+    color: #ffffff;
+
 }
 
 a.social:hover {
     transform: translateY(-4px);
-}
-
-a.linkedin, a.github {
-   color: #ffffff;
-}
-
-a.linkedin:hover, a.github:hover {
-    box-shadow: 0px 0px 20px rgba(255,255,255,.4);
-}
-
-a.linkedin:hover {
-    border-radius: 10%;
-}
-
-a.github:hover {
-    border-radius: 100%;
 }
 
 .social-container hr {
