@@ -23,7 +23,7 @@ function Footer(){
             </a>
             <hr/>
             <p className="footer__text">
-                © {new Date().getFullYear()} - Alberto Ramos, albertosilveiramos@gmail.com
+                © {new Date().getFullYear()} - albertosilveiramos@gmail.com
              </p>
         </div>
     </footer>

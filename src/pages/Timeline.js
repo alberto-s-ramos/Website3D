@@ -29,7 +29,7 @@ function mapSVG(name){
 function Timeline(){
     
     return (
-        <div>
+        <div className="timeline-container">
             <VerticalTimeline className="timeline">
                 {timelineElements.map((element) => {
                         

@@ -15,14 +15,14 @@ function App() {
 
   return (
     <Router>
-      <div className="app">
+      <>
           <NavBar />
           <Switch>
             <Route path="/" exact component={Homepage} />
             <Route path="/games" exact duration={1000}component={GameDevelopment} />
           </Switch>
 
-      </div>
+      </>
     </Router>
   );
 }

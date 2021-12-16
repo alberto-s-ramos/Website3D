@@ -24,7 +24,6 @@ function GameDevelopment() {
       void onScroll({target: scrollArea.current}, [])
     )
 
-    document.body.style.backgroundImage = "radial-gradient(circle, rgb(15, 24, 29), rgb(12, 19, 22), rgb(5, 8, 8))"
   
     const isMobile = useMediaQuery({ query: `(max-width: 900px)` });
     const canvasFov = isMobile ? 65 : 50
@@ -42,6 +41,7 @@ function GameDevelopment() {
                 <a href={element.githubLink} class="gitHub-btn" target="_blank" data-ol-has-click-handler="">
                     GitHub
                 </a>
+
               </center>
         </Game>
       )

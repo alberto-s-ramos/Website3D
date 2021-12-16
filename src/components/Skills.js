@@ -1,7 +1,7 @@
 import React from 'react'
 import "../style/Skills.scss";
 
-function Skills2() {
+function Skills() {
 
 const THICKNESS = 1.5;
 const FONT_SIZE = 9;
@@ -51,22 +51,22 @@ const Layers = ({children}) => (
 
     return(
         <Layers>
-            <Layer text='Blender' gradient={['rgba(15,15,15,0.90)', 'rgba(19,34,57,0.90)']} offset={[26, 68, 0]}  size={48}/>
-            <Layer text='Unity' gradient={['rgba(15,15,15,0.90)', 'rgba(19,34,57,0.90)']} offset={[52, 80, 0]} size={48}/>
-            <Layer text='C#' gradient={['rgba(15,15,15,0.90)', 'rgba(19,34,57,0.90)']} offset={[0, 80, 0]} size={48}/>
-            <Layer text='Git' gradient={['rgba(15,15,15,0.90)', 'rgba(19,34,57,0.90)']} offset={[26, 90, 0]} size={48}/>
+            <Layer text='Blender' gradient={['rgba(85, 101, 203, 0.3)', 'rgba(255, 255, 255,0.3)']} offset={[26, 68, 0]}  size={48}/>
+            <Layer text='Unity' gradient={['rgba(85, 101, 203, 0.3)', 'rgba(255, 255, 255,0.3)']} offset={[52, 80, 0]} size={48}/>
+            <Layer text='C#' gradient={['rgba(85, 101, 203, 0.3)', 'rgba(255, 255, 255,0.3)']} offset={[0, 80, 0]} size={48}/>
+            <Layer text='Git' gradient={['rgba(85, 101, 203, 0.3)', 'rgba(255, 255, 255,0.3)']} offset={[26, 90, 0]} size={48}/>
 
-            <Layer text='Kotlin' gradient={['rgba(20,20,20,0.90)', 'rgba(40,56,81,0.90)']} offset={[26, 28, 0]}  size={48}/>
-            <Layer text='Java' gradient={['rgba(20,20,20,0.90)', 'rgba(40,56,81,0.90)']} offset={[52, 40, 0]} size={48}/>
-            <Layer text='Spring' gradient={['rgba(20,20,20,0.90)', 'rgba(40,56,81,0.90)']} offset={[0, 40, 0]} size={48}/>
-            <Layer text='Docker' gradient={['rgba(20,20,20,0.90)', 'rgba(40,56,81,0.90)']} offset={[26, 50, 0]} size={48}/>
+            <Layer text='Kotlin' gradient={['rgba(85, 101, 203, 0.3)', 'rgba(255, 255, 255,0.3)']} offset={[26, 28, 0]}  size={48}/>
+            <Layer text='Java' gradient={['rgba(85, 101, 203, 0.3)', 'rgba(255, 255, 255,0.3)']} offset={[52, 40, 0]} size={48}/>
+            <Layer text='Spring' gradient={['rgba(85, 101, 203, 0.3)', 'rgba(255, 255, 255,0.3)']} offset={[0, 40, 0]} size={48}/>
+            <Layer text='Docker' gradient={['rgba(85, 101, 203, 0.3)', 'rgba(255, 255, 255,0.3)']} offset={[26, 50, 0]} size={48}/>
 
-            <Layer text='CSS' gradient={['rgba(35,35,35,0.90)', 'rgba(78,93,116,0.90)']} offset={[26, -11, 0]} size={48}/>
-            <Layer text='HTML' gradient={['rgba(35,35,35,0.90)', 'rgba(78,93,116,0.90)']}  offset={[0, 0, 0]}  size={48}/>
-            <Layer text='JS' gradient={['rgba(35,35,35,0.90)', 'rgba(78,93,116,0.90)']} offset={[52, 0, 0]} size={48}/>
-            <Layer text='React' gradient={['rgba(35,35,35,0.90)', 'rgba(78,93,116,0.90)']} offset={[26, 11, 0]} size={48}/>
+            <Layer text='CSS' gradient={['rgba(85, 101, 203, 0.3)', 'rgba(255, 255, 255,0.3)']} offset={[26, -11, 0]} size={48}/>
+            <Layer text='HTML' gradient={['rgba(85, 101, 203, 0.3)', 'rgba(255, 255, 255,0.3)']}  offset={[0, 0, 0]}  size={48}/>
+            <Layer text='JS' gradient={['rgba(85, 101, 203, 0.3)', 'rgba(255, 255, 255,0.3)']} offset={[52, 0, 0]} size={48}/>
+            <Layer text='React' gradient={['rgba(85, 101, 203, 0.3)', 'rgba(255, 255, 255,0.3)']} offset={[26, 11, 0]} size={48}/>
         </Layers>
     )
 }
 
-export default Skills2
+export default Skills

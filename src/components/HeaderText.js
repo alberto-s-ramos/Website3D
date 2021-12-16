@@ -5,27 +5,24 @@ function HeaderText() {
 
     const traits = 
     [
-      ' frontend developer.',
-      1000,
-      ' game developer.',
-      1000,
-      ' fullstack developer.',
-      1000,
-      ' game designer.',
-      1000,
+      'Frontend developer.', 1000,
+      'Game developer.', 1000,
+      'Fullstack developer.', 1000,
+      'Game designer.', 1000,
     ]
 
     return (
         <div className="landingPage">
-            <p>
-                My name is <b>Alberto</b> and <br/>
-                I'm a 
-                <Typical
-                    loop={Infinity}
-                    wrapper="b"
-                    steps={traits}
-                /> <br/>
-            </p>  
+            <div className="text-wrapper">
+                <p>Hello, I'm a </p>  
+                 <h1>
+                    <Typical
+                        loop={Infinity}
+                        wrapper="b"
+                        steps={traits}
+                    />
+                </h1>
+            </div>
         </div>  
     )
 }

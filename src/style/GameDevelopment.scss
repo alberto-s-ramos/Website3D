@@ -9,11 +9,11 @@
 }
 
 .gameDetailsLeftContainer {
-  background: linear-gradient(-90deg, rgb(17, 23, 26) 0%, rgb(34, 51, 58) 0%, rgba(0,0,0,0) 58%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(-90deg, rgb(17, 23, 26) 0%, rgb(11, 14, 18) 0%, rgba(0,0,0,0) 58%, rgba(0,0,0,0) 100%);
 }
 
 .gameDetailsRightContainer {
-  background: linear-gradient(90deg, rgb(17, 23, 26) 0%, rgb(34, 51, 58) 0%, rgba(0,0,0,0) 58%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(90deg, rgb(17, 23, 26) 0%, rgb(11, 14, 18) 0%, rgba(0,0,0,0) 58%, rgba(0,0,0,0) 100%);
 }
 
 /*
@@ -42,11 +42,9 @@
 }
 
 .gameDetailsRight p, .gameDetailsLeft p {
-  font-family: 'Abel', sans-serif; 
-  color: rgba(252, 242, 208, 0.863);
   font-size: 1.3rem;
   text-align: justify;
-  text-shadow: 5px 5px 5px #000000;
+  text-shadow: 0px 5px 5px rgba(0,0,0,0.4);
   padding-left: 6rem;
   padding-right: 6rem;
 }
@@ -60,16 +58,15 @@
   font-family: 'Abel', sans-serif; 
   display: inline-block;
   font-size: 1.3rem;
-  color: rgba(252, 242, 208, 0.863);
+  color: rgba(255, 255, 255, 0.863);
   background: rgba(252, 242, 208, 0.05);
-  width: 20%;
-  height: 25%;
+  width: 30%;
   text-align: center;
   text-decoration: none;
   border-width: 2px;
   border-style: solid;
   border-radius: 10px;
-  padding: .25em;
+  padding: .45em;
   backdrop-filter: blur(3px);
 }
   
@@ -169,7 +166,7 @@
   }
 
   .gameDetailsLeft div, .gameDetailsRight div {
-    background: linear-gradient(0deg, rgb(25, 31, 37) 0%, rgb(30, 39, 48) 50%, rgba(0,0,0,0) 100%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(0deg, rgb(8, 10, 11) 0%, rgb(30, 39, 48) 50%, rgba(0,0,0,0) 100%, rgba(0,0,0,0) 100%);
     border-radius: 0px 0px 10px 10px;
     padding: 1rem;
     padding-bottom: 2rem;
