@@ -3,14 +3,16 @@
 .about {
   width: 100%;
   background-color:rgba(250, 250, 250, 0.05);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
   margin-bottom: 100px;
   padding-bottom: 20px;
+  color: #FFF;
 
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+
 .about-grid-container{
   width: auto;
   display: grid;
@@ -23,15 +25,6 @@
   justify-items: stretch;
   text-align: justify;
   padding: 3rem;
-
-
-}
-
-.about-grid-item{
-  text-align: left;
-  width: 100%;
-  margin: auto auto;
-  color: #FFF;
 }
 
 .about-profile-photo {
@@ -39,6 +32,9 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100%;
+  text-align: left;
+  justify-content: center;
 
   img{
     border-radius: 3%;
@@ -55,12 +51,10 @@
 
 .about-title{
   grid-area: aboutmetitle;
-  text-align: left;
-  background-image: linear-gradient(110deg, rgba(85, 101, 203, 0.5) 0%,rgb(255, 255, 255) 100%);
-  color: transparent;
-  -webkit-background-clip: text;
-  font-size: 80px;
-  margin-bottom: -30px;
+  margin-bottom: -10px;
+  h1{
+    text-align: left;
+  }
 }
 
 
@@ -74,85 +68,19 @@
  }
 }
 
-
 .about-btn {
   grid-area: cvbutton;
-  width: 180px;
-  height: auto;
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px 25px;
-  font-weight: 500;
-  background: transparent;
-  font-weight: 900;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  outline: none; 
-  margin-left: 0rem;
-  margin-top: 10px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  p{
-    margin: 0;
-  }
-
-}
-
-.btn {
-  background: linear-gradient(110deg, rgba(85, 101, 203, 0.5) 0%,rgba(160, 173, 254, 0.5) 100%);
-  border: none;
-  z-index: 1;
-}
-
-.btn:after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 100%;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  background-color: #dedede;
-  border-radius: 5px;
-  color: rgba(85, 101, 203, 0.5);
-  transition: all 0.5s ease;
-}
-
-.btn:hover {
-  color: rgba(85, 101, 203, 1);
-}
-
-.btn:hover:after {
-  left: 0;
-  width: 100%;
-}
-
-.btn:active {
-  top: 2px;
 }
 
 @media (max-width: 85rem) {
 
   .about-grid-container {
       column-gap: 0rem;
-      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
       width: auto;
       grid-template-areas:
           'aboutmetitle'
           'aboutmetext'
           'cvbutton';
-  }
-  .about-title{
-    font-size: 50px;
-    margin-bottom: -10px;
-  }
-
-  .about-title-footer{
-      display: block;
   }
 
   .about-grid-item {
@@ -160,14 +88,9 @@
   }
 
   .about-profile-photo img {
-
       display: none;
   }
 
-  .about-btn{
-      font-size: 0.9rem;
-      width: 150px;
-  }
   .about-description{
     text-align: justify;
     p { 

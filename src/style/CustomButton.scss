@@ -1,0 +1,65 @@
+
+  
+  .custom-btn {
+    background: linear-gradient(110deg, rgba(85, 101, 203, 0.5) 0%,rgba(160, 173, 254, 0.5) 100%);
+    border: none;
+    z-index: 1;
+    width: 180px;
+    height: auto;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    outline: none; 
+    margin-left: 0rem;
+    margin-top: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    p{
+      margin: 0;
+    }
+
+  }
+  
+  .custom-btn:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #dedede;
+    border-radius: 5px;
+    color: rgba(85, 101, 203, 0.5);
+    transition: all 0.5s ease;
+  }
+  
+  .custom-btn:hover {
+    color: rgba(85, 101, 203, 1);
+  }
+  
+  .custom-btn:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  
+  .custom-btn:active {
+    top: 2px;
+  }
+
+  @media (max-width: 85rem) {
+
+    .custom-btn{
+        font-size: 0.9rem;
+        width: 150px;
+    }
+
+  }
+  

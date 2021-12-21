@@ -7,6 +7,10 @@ import { useMediaQuery } from 'react-responsive';
 
 //Components
 import Game from "../components/Game";
+import {CustomButton} from "../components/CustomButton";
+import {CustomTitle} from "../components/CustomTitle";
+
+
 import { Section } from "../components/section"
 import state from "../components/state"
 import Loader from "../components/Loader"
@@ -35,14 +39,23 @@ function GameDevelopment() {
           gltfPath = {element.model}
           rightSide = {element.rightSide}
           domContent = {domContent} >
-              <center>
-                <img src = {element.logo}/>
-                <p>{element.description}</p>
-                <a href={element.githubLink} class="gitHub-btn" target="_blank" data-ol-has-click-handler="">
-                    GitHub
-                </a>
-
-              </center>
+                <div className="game-content">
+                  <div className="game-title">
+                    <CustomTitle 
+                      title={element.name}
+                    /> 
+                  </div>
+                  <div className="game-description">
+                    <p>{element.description}</p>
+                  </div>
+                  <div className="game-btn">
+                    <CustomButton 
+                      name="GitHub"
+                      link={element.githubLink}
+                    />
+                  </div>
+                </div>
+             
         </Game>
       )
 

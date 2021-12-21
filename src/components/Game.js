@@ -23,7 +23,7 @@ function HTMLContent({ yPosition, gltfPath, bgColor, rightSide, ...props }) {
     const styleChild = rightSide ? "gameDetailsRight" : "gameDetailsLeft"
 
     const isMobile = useMediaQuery({ query: `(max-width: 900px)` });
-    const modelScale = isMobile ? 0.45 : 0.85
+    const modelScale = isMobile ? 0.45 : 0.65
     const modelPositionX = isMobile ? 0 : xPosition
     const modelPositionY = isMobile ? 90 : -10
 
