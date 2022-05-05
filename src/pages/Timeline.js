@@ -3,6 +3,7 @@ import timelineElements from "../constants/TimelineElements";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import { ReactComponent as WorkIcon} from '../assets/work.svg'
 
+import { ReactComponent as NetcentricIcon} from '../assets/Netcentric.svg'
 import { ReactComponent as TalkdeskIcon} from '../assets/Talkdesk.svg'
 import { ReactComponent as AaltoIcon} from '../assets/Aalto.svg'
 import { ReactComponent as IscteIcon} from '../assets/Iscte.svg'
@@ -13,6 +14,8 @@ import "../style/Timeline.scss";
 
 function mapSVG(name){
     switch(name){
+        case "netcentric":
+            return <NetcentricIcon fill="white"/>
         case "talkdesk":
             return <TalkdeskIcon fill="white"/>
         case "iscte":
@@ -27,28 +30,57 @@ function mapSVG(name){
 }
 
 function Timeline(){
+
+    const workElements = [];
+    const educationElements = [];
+
+    function fillElements() {
+        timelineElements.forEach((element) => {
+            element.isWorkIcon === 'work' ?                
+                workElements.push(<VerticalTimelineElement
+                    key={ element.key }
+                    date={ element.date }
+                    dateClassName="date"
+                    icon={ mapSVG(element.icon) }
+                    iconStyle={ element.bgColor }
+                >
+                    <h3 className="vertical-timeline-element-title">{ element.title }</h3>
+                    <p className="vertical-timeline-element-subtitle">{ element.location }</p>
+                    <h4>{ element.role }</h4>
+                    <p>{ element.description }</p>
+                </VerticalTimelineElement>)
+            :
+            educationElements.push(<VerticalTimelineElement
+                key={ element.key }
+                date={ element.date }
+                dateClassName="date"
+                icon={ mapSVG(element.icon) }
+                iconStyle={ element.bgColor }
+            >
+                <h3 className="vertical-timeline-element-title">{ element.title }</h3>
+                <p className="vertical-timeline-element-subtitle">{ element.location }</p>
+                <h4>{ element.role }</h4>
+                <p>{ element.grade ? element.grade : ''}</p>
+                <p>{ element.description }</p>
+            </VerticalTimelineElement>) 
+        })
+    }
+    fillElements();
     
     return (
-        <div className="timeline-container">
-            <VerticalTimeline className="timeline">
-                {timelineElements.map((element) => {
-                        
-                        return (
-                            <VerticalTimelineElement
-                                key={ element.key }
-                                date={ element.date }
-                                dateClassName="date"
-                                icon={ mapSVG(element.icon) }
-                                iconStyle={ element.bgColor }
-                            >
-                                <h3 className="vertical-timeline-element-title">{ element.title }</h3>
-                                <h5 className="vertical-timeline-element-subtitle">{ element.location }</h5>
-                                <p id="description">{ element.description }</p>
-                            </VerticalTimelineElement>
-                        )
-                })}
-            </VerticalTimeline>
-        </div>
+        <section className="timeline">
+            <div className="timeline__container">
+                <h1>Professional Experience</h1>
+                <VerticalTimeline layout='1-column-left' >
+                    {workElements}
+                </VerticalTimeline>
+                <br/><br/><br/>
+                <h1>Education</h1>
+                <VerticalTimeline layout='1-column-left' >
+                    {educationElements}
+                </VerticalTimeline>
+            </div>
+        </section>
     )
 }
 

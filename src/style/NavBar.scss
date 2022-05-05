@@ -1,49 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Manjari&display=swap');
+@import "variables";
 
-header {
+$bgColor: linear-gradient(110deg, rgba(32, 41, 102, 0.2) 0%,rgba(80, 107, 180, 0.2) 100%);;
+
+.header {
     position: absolute;
     z-index: 99;
     width: 100%;
-    padding: 30px;
-    background-color:rgba(250, 250, 250, 0.05);
-    backdrop-filter: blur(9px);
-    font-size: 20px;
+    padding: 1rem;
+    background: $bgGradient;
+    backdrop-filter: blur($bgBlur);
+    font-size: 2rem;
   
-    .header-inner {
+    .header__nav {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-  
-      nav {
-        ul {
-          margin: 0;
-          padding: 0;
-          display: flex;
+      justify-content: right;
+    
+      ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
 
-          li {
-            list-style: none;
-            &
-            p {
-              text-transform: capitalize;
-              margin: 0 40px;
+        li {
+          list-style: none;
+          color: white;
+          transition: all 0.5s ease;
+          margin: 0 40px 0 40px;
+          text-decoration: none;
 
-              color: rgb(236, 236, 236);
-              transition: all 0.5s ease;
-
-            }
-            p:hover{
-              color: rgb(162, 179, 221);
-              transition: all 0.5s ease;
-            }
-        
-          }
+        }
+        li:hover {
+          color: rgb(162, 179, 221);
         }
       }
     }
   }
 
-  @media (max-width: 85rem) {
-    header {
+  @media (max-width: 85em) {
+    .header {
       display: flex;
       align-items: center;
       justify-content: space-evenly;

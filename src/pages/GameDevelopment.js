@@ -1,14 +1,14 @@
 import React, { Suspense, useEffect, useRef } from "react";
 import "../style/GameDevelopment.scss";
-import Particles from "react-particles-js";
+import Particles from 'react-tsparticles';
 import { Canvas } from "react-three-fiber";
 import { useMediaQuery } from 'react-responsive';
 
 
 //Components
 import Game from "../components/Game";
-import {CustomButton} from "../components/CustomButton";
-import {CustomTitle} from "../components/CustomTitle";
+import { CustomButton } from "../components/CustomButton";
+import { CustomTitle } from "../components/CustomTitle";
 
 
 import { Section } from "../components/section"
@@ -16,7 +16,7 @@ import state from "../components/state"
 import Loader from "../components/Loader"
 
 // Elements
-import gameElements from "../constants/GameElements";
+import gameElements from "../constants/gameElements";
 import particles from "../constants/Particles";
 
 function GameDevelopment() {

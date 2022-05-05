@@ -11,7 +11,7 @@ import {
 function Footer(){
   return (
     <footer>
-       <div class="social-container">
+       <div className="social-container">
             <a href="https://github.com/albertoramos1997" className="social" target="_blank">
                 <FontAwesomeIcon icon={faGithub} size="2x" />
             </a>

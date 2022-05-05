@@ -1,100 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
-.about {
-  width: 100%;
-  background-color:rgba(250, 250, 250, 0.05);
-  backdrop-filter: blur(8px);
-  margin-bottom: 100px;
-  padding-bottom: 20px;
-  color: #FFF;
+$bgColor: rgba(250, 250, 250, 0.05);
+$bgBlur: 9px;
 
+.defaultFlexLayout {
   display: flex;
   align-items: center;
-  flex-direction: column;
-}
-
-.about-grid-container{
-  width: auto;
-  display: grid;
-  grid-template-columns: auto;
-  column-gap: 2rem;
-  grid-template-areas:
-      'profilephoto aboutmetitle'
-      'profilephoto aboutmetext'
-      'profilephoto cvbutton';
-  justify-items: stretch;
-  text-align: justify;
-  padding: 3rem;
-}
-
-.about-profile-photo {
-  grid-area: profilephoto;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  text-align: left;
   justify-content: center;
-
-  img{
-    border-radius: 3%;
-    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.2), 0 16px 40px 0 rgba(0, 0, 0, 0.9);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    max-width: 250px;
-    max-height: 250px;
-  
-  }
+  flex-direction: column;
 }
 
-.about-title{
-  grid-area: aboutmetitle;
-  margin-bottom: -10px;
-  h1{
-    text-align: left;
-  }
-}
+.about {
+  @extend .defaultFlexLayout;
+  width: 100%;
+  background-color: $bgColor;
+  backdrop-filter: blur($bgBlur);
+  margin-bottom: 150px;
+  font-size: 1.6rem;
 
-
-.about-description{
- grid-area: aboutmetext;
- text-align: justify;
-
- p { 
-  margin: 0;
-  max-width:600px;
- }
-}
-
-.about-btn {
-  grid-area: cvbutton;
-}
-
-@media (max-width: 85rem) {
-
-  .about-grid-container {
-      column-gap: 0rem;
-      width: auto;
-      grid-template-areas:
-          'aboutmetitle'
-          'aboutmetext'
-          'cvbutton';
-  }
-
-  .about-grid-item {
-      text-align: left;
-  }
-
-  .about-profile-photo img {
-      display: none;
-  }
-
-  .about-description{
+  &__container{
+    width: auto;
+    display: grid;
+    grid-template-columns: auto 100%;
+    grid-template-rows: auto auto auto;
+    justify-items: stretch;
     text-align: justify;
-    p { 
-      font-size: 15px;
+    padding: 10em 2em 10em 2em;
+  }
+
+  &__picture {
+    @extend .defaultFlexLayout;
+    grid-row-start: 2; 
+    grid-column-start: 1;
+    border-radius: 100%;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.2), 0 16px 40px 0 rgba(0, 0, 0, 0.9);
+    object-fit: cover;
+    background-position: center;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 10%;
+  }
+  
+  &__title{
+    grid-row-start: 1; 
+    grid-column-start: 2;
+    h1 {
+      text-align: left;
     }
-   }
+  }
+
+  &__description{
+    grid-row-start: 2; 
+    grid-column-start: 2;
+    text-align: justify;
+    margin: 0;
+    max-width: 600px;
+  }
+  
+  &__btn {
+    grid-row-start: 3; 
+    grid-column-start: 2;
+  }
+}
+
+@media (max-width: 70rem) {
+  .about {
+
+    &__container {
+      grid-template-columns: 0px 100%;
+    }
+
+    &__picture {
+      display: none;
+    }
+
+    &__description{
+        font-size: 1.5rem;
+    }
+  }
 }

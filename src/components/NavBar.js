@@ -6,19 +6,16 @@ import "../style/NavBar.scss";
 function NavBar() {
   return (
     <header className="header">
-      <div className='header-inner'>
-       <div className='logo'/>
-        <nav>
+        <nav className="header__nav">
           <ul>
             <Link to="/" style={{ textDecoration: 'none' }}>
-              <li> <p>Homepage</p> </li>
+              <li> Homepage </li>
             </Link>
             <Link to="/games" style={{ textDecoration: 'none' }}>
-              <li> <p>Games</p> </li>
+              <li> Games </li>
             </Link>
           </ul>
         </nav>
-      </div>
     </header>
   );
 }

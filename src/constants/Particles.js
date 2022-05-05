@@ -1,60 +1,70 @@
 let particles = {
-    "particles": {
-        "number": {
-          "value": 10,
-          "density": {
-            "enable": true,
-            "value_area": 50
-          }
-        },
-        "color": {
-          "value": "#ffffff"
-        },
-        "shape": {
-          "type": "circle",
-        },
-        "opacity": {
-          "value": 1,
-          "random": true,
-          "anim": {
-            "enable": true,
-            "speed": 0.3,
-            "opacity_min": 0.2,
-            "sync": false
-          }
-        },
-        "size": {
-          "value": 1.5,
-          "random": true,
-          "anim": {
-            "enable": true,
-            "speed": 1,
-            "size_min": 0.3,
-            "sync": false
-          }
-        },
-        "line_linked": {
-          "enable": true,
-          "distance": 50,
-          "color": "#ffffff",
-          "opacity": 0.05,
-          "width": 2
-        },
-        "move": {
-          "enable": true,
-          "speed": 0.3 ,
-          "direction": "top",
-          "random": true,
-          "straight": false,
-          "out_mode": "out",
-          "bounce": false,
-          "attract": {
-            "enable": false,
-            "rotateX": 600,
-            "rotateY": 1200
-          }
-        }
+  fpsLimit: 120,
+  interactivity: {
+    events: {
+      onClick: {
+        enable: true,
+        mode: "push",
       },
+      onHover: {
+        enable: true,
+        mode: "repulse",
+      },
+      resize: true,
+    },
+    modes: {
+      push: {
+        quantity: 4,
+      },
+      repulse: {
+        distance: 100,
+        duration: 0.4,
+      },
+    },
+  },
+  particles: {
+    number: {
+      value: 10,
+      density: {
+          enable: true,
+          value_area: 50,
+      }
+    },  
+    color: {
+      value: "#ffffff",
+    },
+    lineLinked: {
+        enable: true,
+        distance: 50,
+        color: "#ffffff",
+        opacity: 0.05,
+        width: 2
+    },
+    move: {
+      direction: "top",
+      enable: true,
+      random: true,
+      speed: 0.8,
+      straight: true,
+    },
+    number: {
+      density: {
+        enable: true,
+        area: 800,
+      },
+      value: 80,
+    },
+    opacity: {
+      value: 1,
+    },
+    shape: {
+      type: "circle",
+    },
+    size: {
+      value: { min: 0.1, max: 1.2 },
+    },
+  },
+  detectRetina: true,
 }
 
 export default particles

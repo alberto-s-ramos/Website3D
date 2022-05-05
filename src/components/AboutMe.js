@@ -2,34 +2,19 @@ import React from 'react'
 import {CustomButton} from './CustomButton'
 import {CustomTitle} from './CustomTitle'
 import "../style/AboutMe.scss";
-import Tilt from 'react-vanilla-tilt'
 
-import * as aboutMe from "../constants/AboutMeElements";
 
 function AboutMe() {
     return (
-          <section class="about" id="aboutsection">
-            <div class="about-grid-container">
-                <div class="about-grid-item about-profile-photo">
-                  <Tilt>
-                    <img src="./profile_pic.png"/>
-                  </Tilt>
+          <section class="about">
+            <img class="about__picture" src="./profile_pic.webp"/>
+            <div class="about__container">
+                <div class="about__title">
+                  <CustomTitle title="About me"/>
                 </div>
-                <div class="about-title">
-                  <CustomTitle 
-                    title="About me"
-                  />
-                </div>
-                <div class="about-grid-item about-description" id="style-5">
-                      <p>{aboutMe.PARAGRAPH1}</p>
-                      <p>{aboutMe.PARAGRAPH2}</p>
-                      <p>{aboutMe.PARAGRAPH3}</p>
-                </div>
-                <div className="about-btn">
-                  <CustomButton 
-                    name="Resume"
-                    link="./Resume.pdf"
-                  />
+                  <p class="about__description">I’m a Software Engineer originally from Portugal, currently living in Berlin, Germany. Well-organized and hardworking person with a creativity vein and attention to detail. Always keen to improve my skills and to learn new technologies that excite me. Animal lover, huge fan of climbing, hiking and photography. Interested in the entire software development spectrum with a special passion for frontend and design.</p>
+                <div className="about__btn">
+                  <CustomButton name="Resume" link="./Resume.pdf"/>
                 </div>
             </div>
           </section>     
