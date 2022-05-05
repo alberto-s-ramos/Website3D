@@ -80,9 +80,9 @@ function Timeline(){
             </div>
         </section>
         <section id="Education" className="timeline">
-            <div className="timeline__container" animate={false}>
+            <div className="timeline__container">
                 <h1>Education</h1>
-                <VerticalTimeline layout='1-column-left' >
+                <VerticalTimeline layout='1-column-left' animate={false}>
                     {educationElements}
                 </VerticalTimeline>
             </div>
