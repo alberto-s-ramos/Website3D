@@ -22,6 +22,7 @@
     "lerp": "^1.0.3",
     "node-sass": "^6.0.1",
     "react": "^16.13.1",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-animated-path": "^1.0.3",
     "react-blob": "^2.1.0",
     "react-dnd": "^14.0.3",

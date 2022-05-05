@@ -1,0 +1,60 @@
+@import "variables";
+
+$bgColor: linear-gradient(110deg, rgba(32, 41, 102, 0.2) 0%,rgba(80, 107, 180, 0.2) 100%);;
+
+.header {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .header__nav {
+      padding: 0.9em;
+      border-radius: 0 0 15px 15px;
+      width: 100%;
+      max-width: $maxWidthFull;    
+      background: $bgGradient;
+      backdrop-filter: blur($bgBlur);
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    
+      ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+        li {
+          list-style: none;
+          color: white;
+          transition: all 0.5s ease;
+          margin: 0 40px 0 40px;
+          text-decoration: none;
+          font-size: $p--size--default;
+
+          a {
+            text-decoration: none;
+            color: white;
+            transition: 0.5s ease-in-out;
+          }
+          a:hover {
+            color: rgb(143, 175, 255);
+          }
+        }
+        
+      }
+    }
+  }
+
+  @media (max-width: 70em) {  
+    a { font-size: $p--size--70em; }
+  }
+  @media (max-width: 40em) {  
+    a { font-size: $p--size--40em; }
+  }
+
+  @media (max-width: 25em) {  
+    a { font-size: $p--size--25em; }
+  }

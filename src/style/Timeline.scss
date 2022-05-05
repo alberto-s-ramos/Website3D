@@ -17,6 +17,7 @@
     max-width: $maxWidthFull;
     z-index: 1;
     padding: 0 3rem 0 3rem;
+    margin-top: 5rem;
 
   
     h1 { 
@@ -74,6 +75,7 @@
 }
 .vertical-timeline{
   margin: 0;
+  padding: 1.5rem 0;
   width: 100%;
 }
 .vertical-timeline-element { margin: 1em 0; }
@@ -86,8 +88,8 @@
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
   transition: border 0.8s ease-in-out;
   
-  h2 { color: white; }
-  p { margin: 0; }
+  h2 { color: white; transition: all 0.5s ease;  }
+  p { margin: 0; transition: all 0.5s ease;  }
   .vertical-timeline-element-date { font-size: $p--size--default * 0.8; }
 }
 .vertical-timeline-element-content-arrow {
@@ -100,7 +102,7 @@
 }
 
 
-.vertical-timeline::before { background: rgba(255, 255, 255, 0); }
+.vertical-timeline::before { opacity: 0; }
 
 .vertical-timeline-element-icon {
   box-shadow: 0 0 0 1.5px  rgba(255, 255, 255, 1), 0px 0px 20px 0 rgba(255, 255, 255, 0.35);

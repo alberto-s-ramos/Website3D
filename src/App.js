@@ -2,29 +2,31 @@ import React from "react";
 import "./style/App.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-//Components
-import NavBar from "./components/NavBar";
-
-
-//pages
-import Homepage  from "./pages/Homepage";
-import GameDevelopment  from "./pages/GameDevelopment";
-
+import Navigation from "./components/Navigation";
+import { Intro } from "./sections/Intro";
+import Timeline  from "./sections/Timeline";
+import Footer from "./components/Footer";
+import { BgParticles } from "./components/BgParticles";
+import particles from "./constants/particlesConfig";
 
 function App() {
 
   return (
     <Router>
       <>
-          <NavBar />
-          <Switch>
-            <Route path="/" exact component={Homepage} />
-            <Route path="/games" exact duration={1000}component={GameDevelopment} />
-          </Switch>
-
+          <main className="app">
+          <Navigation/>
+              <BgParticles 
+                className="particles"
+                particles={particles}
+              />
+              <Intro/>
+              <Timeline/>
+              <Footer/>
+          </main>
       </>
     </Router>
   );
 }
 
-export default App
+export default App;

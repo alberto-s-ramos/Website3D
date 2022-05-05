@@ -1,51 +1,59 @@
+@import 'variables';
 
-.social-container {
-    background-color:rgba(250, 250, 250, 0.05);
-    backdrop-filter: blur(2px);
-    color: white;
-    padding: 1px 40px;
-    margin-top: 5rem;
-    text-align: center;
-
-    font-size: 17px;
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-a.social {
-    margin: 0 1rem;
-    margin-top: 1rem;
-    transition: transform 250ms;
-    display: inline-block;
-    color: #ffffff;
-}
+.footer {
+    width: 100%;
+    @extend .flex;
 
-a.social:hover {
-    transform: translateY(-4px);
-}
+    &__container {
+        width: 100%;
+        @extend .flex;
+        max-width: $maxWidthFull;
+        background: $bgFooter;
+        backdrop-filter: blur($bgBlur * 0.3);
+        border-radius: 0.5rem 0.5rem 0 0;
+        padding-top: 0.5rem;
+    }
 
-.social-container hr {
-    margin-top: 1.5rem ;
-    width: 350px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
+    &__social {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 0.5rem;
+        font-size: $p--size--40em;
+    }
 
-.social-container p {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-
-@media (max-width: 85rem) {
-    .social-container {
-        font-size: 16px;
+    &__text {
+        font-size: $p--size--70em; 
+        margin-bottom: 0.5em;
+        opacity: 0.4;
+    }
+    a.social {
+        margin: 0 1rem;
+        transition: transform 250ms;
+        display: inline-block;
+        color: #ffffff;
+    }
+    
+    a.social:hover {
+        transform: translateY(-6px);
     }
 }
 
-@media (max-width: 50rem) {
-    .social-container {
-        font-size: 14px;
+@media (max-width: 40em) {  
+    .footer {
+        &__social { font-size: $p--size--40em; }
+        &__text { font-size: $p--size--40em; }
     }
-    .social-container hr {
-        width: 50%;
-        min-width: 250px;
+}
+@media (max-width: 25em) {  
+    .footer {
+        &__social { font-size: $p--size--25em; }
+        &__text { font-size: $p--size--25em; }
     }
-
 }
