@@ -35,21 +35,24 @@ function Timeline(){
     const educationElements = [];
 
     function fillElements() {
-        timelineElements.forEach((element, i) => {
+        timelineElements.forEach((element) => {
             element.isWorkIcon === 'work' ?                
-                workElements.push(<VerticalTimelineElement
-                    date={ element.date }
-                    dateClassName="date"
-                    icon={ mapSVG(element.icon) }
-                    iconStyle={ element.bgColor }
-                >
+            workElements.push(
+            <VerticalTimelineElement
+                key={ element.key }
+                date={ element.date }
+                dateClassName="date"
+                icon={ mapSVG(element.icon) }
+                iconStyle={ element.bgColor }
+            >
                     <h3 className="vertical-timeline-element-title">{ element.title }</h3>
                     <p className="vertical-timeline-element-subtitle">{ element.location }</p>
                     <h4>{ element.role }</h4>
                     <p>{ element.description }</p>
                 </VerticalTimelineElement>)
             :
-            educationElements.push(<VerticalTimelineElement
+            educationElements.push(
+            <VerticalTimelineElement
                 key={ element.key }
                 date={ element.date }
                 dateClassName="date"
@@ -76,8 +79,8 @@ function Timeline(){
                 </VerticalTimeline>
             </div>
         </section>
-        <section id="Education" className="timeline" animate={false}>
-            <div className="timeline__container">
+        <section id="Education" className="timeline">
+            <div className="timeline__container" animate={false}>
                 <h1>Education</h1>
                 <VerticalTimeline layout='1-column-left' >
                     {educationElements}

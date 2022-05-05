@@ -12,20 +12,16 @@ import particles from "./constants/particlesConfig";
 function App() {
 
   return (
-    <Router>
-      <>
-          <main className="app">
+      <main className="app">
           <Navigation/>
-              <BgParticles 
-                className="particles"
-                particles={particles}
-              />
-              <Intro/>
-              <Timeline/>
-              <Footer/>
-          </main>
-      </>
-    </Router>
+          <BgParticles 
+            className="particles"
+            particles={particles}
+          />
+          <Intro/>
+          <Timeline/>
+          <Footer/>
+      </main>
   );
 }
 
