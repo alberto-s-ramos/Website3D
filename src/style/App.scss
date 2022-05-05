@@ -1,19 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;700&display=swap');
+@import 'variables';
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Catamaran', sans-serif;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: radial-gradient(900px at 100% 110%, rgba(33, 39, 80, 1) 10%, #020409 100%);
+  background: $mainBgColor;
   height: 100vh;
 }
-
+p { font-family: 'Lexend Deca', sans-serif; }
+p, h1, h2, h3, h4, h5, h6, video {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  transition: all 0.7s ease;
+}
+h1 { font-size: $h1--size--default; }
+h2 { font-size: $h2--size--default; }
+h3 { font-size: $h3--size--default; }
+p { font-size: $p--size--default; }
 
 html,
 body,
@@ -23,7 +31,8 @@ body,
   margin: 0;
   padding: 0;
   overflow: hidden;
-  
+  font-size: 10px;
+  color: white;
 }
 
 .app {
@@ -32,126 +41,24 @@ body,
   overflow-x: hidden;
 }
 
-.anim {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  z-index: 1;
-}
-
-.landingPage{
-  color: rgb(255, 255, 255);
-  text-align: left;
-  font-size: 40px;
-  z-index: 5;
-  width: 100%;
-  height: 100vH;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  .text-wrapper {
-    width: 1000px;
-    padding-left: 10rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: left;
-
-    p {
-      width: 100%;
-      font-family: 'Catamaran', sans-serif;
-      text-align: left;
-      font-size: 40px;
-      margin-bottom: -30px;
-      font-weight: 500;
-      text-shadow: 0px 3px 2px rgba(0, 0, 0, 1);
-      color: rgb(236, 236, 236)
-
-    }
-   
-    h1 {
-      width: 100%;
-      background-image: linear-gradient(110deg, rgba(85, 101, 203, 0.5) 0%,rgb(255, 255, 255) 100%);
-      color: transparent;
-      -webkit-background-clip: text;
-      font-size: 80px;
-      margin: 0;
-    }
-  }
-
-
-}
-
-
-@media (max-width: 70rem) {
-
-  body {
-    background: radial-gradient(800px at 120% 120%, rgba(33, 39, 80, 1) 10%, #020409 100%);
-  }
-  
-  .landingPage {
-    .text-wrapper {
-      padding-left: 5rem;
-      p{
-        font-size: 25px;
-        margin-bottom: -18px;
-      }
-      h1 {
-        font-size: 50px;
-  
-      }
-    }
-  } 
-}
-
-@media (max-width: 40rem) {
-  .landingPage {
-    .text-wrapper {
-      padding-left: 3rem;
-      p{
-        font-size: 25px;
-        margin-bottom: -14px;
-      }
-      h1 {
-        font-size: 35px;
-  
-      }
-    }
-  } 
- 
-}
-
-@media (max-width: 30rem) {
-  .landingPage {
-    .text-wrapper {
-      padding-left: 1rem;
-
-    }
-  } 
- 
-}
-
-
 .particles{
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: -99999;
+  z-index: -999999;
 }
 
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 3.5px;
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgba(73, 73, 73,0.3); 
-  border-radius: 10px;
+  border-radius: 2px;
 }
  
 ::-webkit-scrollbar-thumb {
-  background: rgb(255, 255, 255); 
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 1); 
+  border-radius: 2px;
 }

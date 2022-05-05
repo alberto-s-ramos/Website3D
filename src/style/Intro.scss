@@ -1,0 +1,99 @@
+@import 'variables';
+
+.defaultFlexLayout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.landingPage{
+    @extend .defaultFlexLayout;
+    color: white;
+    text-align: left;
+    font-size: 5rem;
+    width: 100%;
+    height: 70vH;
+    
+    &__container {
+        z-index: 1;
+        @extend .defaultFlexLayout;
+        justify-content: flex-start;
+        align-items: flex-start;
+        justify-items: center;
+        width: 100%;
+        max-width: $maxWidthFull;
+        padding: 0 3rem 0 3rem;
+    }
+
+    &__text {
+        @extend .defaultFlexLayout;
+        align-items: flex-start;
+        width: 100%;
+        text-align: justify;
+        
+        h1 {
+            width: 100%;
+            font-weight: 500;
+        }
+        h1:nth-child(1) { margin-bottom: -30px; }
+        span { @extend .customTitle; }
+        p {
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__titleArea {
+        display: grid;
+        grid-template-columns: auto auto;
+        line-height: 1;
+        column-gap: 0.2em;
+        margin-bottom: 0.2em;
+    }
+
+    #emoji_vid {
+        border-radius: 10px; 
+        opacity: 0.95;
+        height: $emoji_vid--size--default;
+    }
+}
+
+@media (max-width: 70em) {  
+    .landingPage {
+
+        &__container {  
+            grid-template-columns: 100%;
+            grid-template-rows: 50% 50%;
+            justify-items: start;
+            max-width: $maxWidthMedium;
+
+            h1 { font-size: $h1--size--70em; }
+            h1:nth-child(1) { margin-bottom: -15px; }
+            p { font-size: $p--size--70em; }
+        }
+        #emoji_vid { height: $emoji_vid--size--70em; }
+    } 
+}
+
+@media (max-width: 40em) {
+    .landingPage {
+
+        &__container {
+            h1 { font-size: $h1--size--40em; }
+            p { font-size: $p--size--40em; }
+        }
+        #emoji_vid { height: $emoji_vid--size--40em; }
+    } 
+}
+
+@media (max-width: 25em) {
+    .landingPage {
+        &__container {
+
+            h1 { font-size: $h1--size--25em; }
+            p { font-size: $p--size--25em; }
+        }
+        #emoji_vid { height: $emoji_vid--size--25em; }
+    } 
+}
