@@ -13,13 +13,13 @@ function Footer(){
     <footer className='footer'>
         <div className='footer__container'>
             <div className="footer__social">
-                <a href="https://github.com/albertoramos1997" className="social" target="_blank">
-                    <FontAwesomeIcon icon={faGithub} size="2x" />
-                </a>
-                <a href="https://www.linkedin.com/in/alberto-s-ramos/" className="social" target="_blank">
+                <a href="https://www.linkedin.com/in/alberto-s-ramos/" aria-label="Linkedin" className="social" target="_blank">
                     <FontAwesomeIcon icon={faLinkedin} size="2x" />
                 </a>
-                <a href="https://codepen.io/albertoramos1997" className="social" target="_blank">
+                <a href="https://github.com/albertoramos1997" aria-label="Github" className="social" target="_blank">
+                    <FontAwesomeIcon icon={faGithub} size="2x" />
+                </a>
+                <a href="https://codepen.io/albertoramos1997" aria-label="CodePen" className="social" target="_blank">
                     <FontAwesomeIcon icon={faCodepen} size="2x" />
                 </a>
             </div>
