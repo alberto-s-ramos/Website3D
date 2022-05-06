@@ -13,15 +13,16 @@ $btnHeight: 38px;
     color: #fff;
     border-radius: 5px;
     padding: 1rem 2.5rem;
-    cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
     text-decoration: none;
     display: flex;
     align-items: center;
-    justify-content: center;
-    p { margin: 0; }
-
+    justify-content: center;    
+    p { 
+      margin: 0;
+      transition: all 0.3s ease;
+    }
   }
   
   .custom-btn:after {
@@ -39,7 +40,8 @@ $btnHeight: 38px;
   }
   
   .custom-btn:hover {
-    color: rgba(85, 101, 203, 1);
+    p {color: rgba(85, 101, 203, 1); }
+
   }
   
   .custom-btn:hover:after {
