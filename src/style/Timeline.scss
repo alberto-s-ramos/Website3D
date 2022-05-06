@@ -24,9 +24,9 @@
       @extend .customTitle;
       font-size: $h1--size--default;
     }
-    h3 { font-size: $h3--size--default;}
-    h4 {
-      font-size: $h4--size--default;
+    h2 { font-size: $h2--size--default;}
+    h3 {
+      font-size: $h3--size--default;
       margin-top: 15px;
     }
     p { font-size: $p--size--default * 0.8; }
@@ -45,8 +45,8 @@
         &__container {  
             max-width: $maxWidthMedium;
             h1 { font-size: $h1--size--70em; }
+            h2 { font-size: $h2--size--70em; }
             h3 { font-size: $h3--size--70em; }
-            h4 { font-size: $h4--size--70em; }
             p { font-size: $p--size--70em; }
         }
     } 
@@ -55,8 +55,8 @@
     .timeline {
         &__container {  
             h1 { font-size: $h1--size--40em; }
+            h2 { font-size: $h2--size--40em; }
             h3 { font-size: $h3--size--40em; }
-            h4 { font-size: $h4--size--40em; }
             p { font-size: $p--size--40em; }
         }
     } 
@@ -66,8 +66,8 @@
     .timeline {
         &__container {  
             h1 { font-size: $h1--size--25em; }
+            h2 { font-size: $h2--size--25em; }
             h3 { font-size: $h3--size--25em; }
-            h4 { font-size: $h4--size--25em; }
             p { font-size: $p--size--25em; }
         }
     } 

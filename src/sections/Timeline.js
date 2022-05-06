@@ -45,11 +45,11 @@ function Timeline(){
                 icon={ mapSVG(element.icon) }
                 iconStyle={ element.bgColor }
             >
-                    <h3 className="vertical-timeline-element-title">{ element.title }</h3>
-                    <p className="vertical-timeline-element-subtitle">{ element.location }</p>
-                    <h4>{ element.role }</h4>
-                    <p>{ element.description }</p>
-                </VerticalTimelineElement>)
+                <h2 className="vertical-timeline-element-title">{ element.title }</h2>
+                <p className="vertical-timeline-element-subtitle">{ element.location }</p>
+                <h3>{ element.role }</h3>
+                <p>{ element.description }</p>
+            </VerticalTimelineElement>)
             :
             educationElements.push(
             <VerticalTimelineElement
@@ -59,9 +59,9 @@ function Timeline(){
                 icon={ mapSVG(element.icon) }
                 iconStyle={ element.bgColor }
             >
-                <h3 className="vertical-timeline-element-title">{ element.title }</h3>
+                <h2 className="vertical-timeline-element-title">{ element.title }</h2>
                 <p className="vertical-timeline-element-subtitle">{ element.location }</p>
-                <h4>{ element.role }</h4>
+                <h3>{ element.role }</h3>
                 <p>{ element.grade ? element.grade : ''}</p>
                 <p>{ element.description }</p>
             </VerticalTimelineElement>) 

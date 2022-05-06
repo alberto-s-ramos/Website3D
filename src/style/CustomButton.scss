@@ -1,62 +1,70 @@
 @import 'variables';
 
-$btnWidth: 150px;
+$btnWidthDefault: 15rem;
+$btnWidthSmall: 12.5rem;
+
+$textColorHover: rgb(85, 101, 203);
+$bgColorHover: rgb(233, 234, 236);
+
 $btnHeight: 38px;
-  
-  .custom-btn {
-    background: $btnGradient;
-    border: none;
-    z-index: 1;
-    width: $btnWidth;
-    height: auto;
-    max-height: $btnHeight;
-    color: #fff;
-    border-radius: 5px;
-    padding: 1rem 2.5rem;
-    transition: all 0.3s ease;
-    position: relative;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-    p { 
-      margin: 0;
-      transition: all 0.3s ease;
-    }
-  }
-  
-  .custom-btn:after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 100%;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    background-color: #dedede;
-    border-radius: 5px;
-    color: rgba(85, 101, 203, 0.5);
-    transition: all 0.5s ease;
-  }
-  
-  .custom-btn:hover {
-    p {color: rgba(85, 101, 203, 1); }
 
-  }
-  
-  .custom-btn:hover:after {
-    left: 0;
-    width: 100%;
-  }
-  
-  .custom-btn:active {
-    top: 2px;
-  }
+.custom-btn {
+  background: $btnGradient;
+  border: none;
+  z-index: 1;
+  width: $btnWidthDefault;
+  height: auto;
+  max-height: $btnHeight;
+  color: #fff;
+  border-radius: 5px;
+  padding: 1rem 2.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;    
+  margin: 0;
+  font-size: $p--size--default;
+}
 
-  @media (max-width: 70em) {
-    .custom-btn{
-        font-size: 0.9rem;
-        width: 150px;
-    }
+.custom-btn:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: $bgColorHover;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}  
+
+.custom-btn:hover {
+  color: $textColorHover;
+}
+
+.custom-btn:hover:after {
+  left: 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.custom-btn:active {
+  top: 2px;
+}
+
+@media (max-width: 70em) {
+  .custom-btn{
+    width: 150px;
+    font-size: $p--size--70em;
   }
-  
+}
+
+@media (max-width: 40em) {
+  .custom-btn { 
+    font-size: $p--size--40em; 
+    width: $btnWidthSmall;
+  }
+}

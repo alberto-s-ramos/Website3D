@@ -13,7 +13,8 @@
     text-align: left;
     font-size: 5rem;
     width: 100%;
-    height: 70vH;
+    height: 75vH;
+    margin-top: 4.5rem;
     
     &__container {
         z-index: 1;
@@ -30,7 +31,6 @@
         @extend .defaultFlexLayout;
         align-items: flex-start;
         width: 100%;
-        text-align: justify;
         
         h1 {
             width: 100%;
