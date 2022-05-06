@@ -36,8 +36,8 @@ export const Intro = () => {
                     <p>
                         Originally from Portugal - currently living in Berlin, Germany - I am
                         a hardworking person with a creativity vein and
-                        attention to detail. I am always excited with by new challenges, and to improve
-                        my skillset in technologies that excite me.<br/>
+                        attention to detail. Always excited by new challenges,
+                        and to improve my skillsets as technology evolves.<br/>
                         Dog person, huge fan of climbing, traveling and photography.                        
                         Interested in the entire spectrum of software development, with a special passion
                         for frontend, design and game development.
