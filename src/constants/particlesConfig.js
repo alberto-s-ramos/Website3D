@@ -8,7 +8,7 @@ let particles = {
       },
       onHover: {
         enable: true,
-        mode: "repulse",
+        mode: "attract",
       },
       resize: true,
     },
@@ -16,9 +16,8 @@ let particles = {
       push: {
         quantity: 4,
       },
-      repulse: {
-        distance: 100,
-        duration: 0.4,
+      attract: {
+        distance: 150,
       },
     },
   },
