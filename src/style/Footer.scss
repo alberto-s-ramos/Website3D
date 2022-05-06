@@ -17,8 +17,9 @@
         max-width: $maxWidthFull;
         background: $bgFooter;
         backdrop-filter: blur($bgBlur * 0.3);
-        border-radius: 0.5rem 0.5rem 0 0;
+        border-radius: 1rem 1rem 0 0;
         padding-top: 0.5rem;
+        transition: all 0.7s ease;
     }
 
     &__social {
@@ -45,6 +46,13 @@
     }
 }
 
+@media (max-width: 70em) {  
+    .footer {
+        &__container {
+            max-width: $maxWidthMedium;
+        }
+    }
+}
 @media (max-width: 40em) {  
     .footer {
         &__social { font-size: $p--size--40em; }

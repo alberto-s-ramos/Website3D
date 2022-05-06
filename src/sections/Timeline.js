@@ -74,7 +74,7 @@ function Timeline(){
         <section id="Timeline" className="timeline">
             <div className="timeline__container">
                 <h1>Professional Experience</h1>
-                <VerticalTimeline layout='1-column-left' animate={false}>
+                <VerticalTimeline layout='1-column-left'>
                     {workElements}
                 </VerticalTimeline>
             </div>
@@ -82,7 +82,7 @@ function Timeline(){
         <section id="Education" className="timeline">
             <div className="timeline__container">
                 <h1>Education</h1>
-                <VerticalTimeline layout='1-column-left' animate={false}>
+                <VerticalTimeline layout='1-column-left'>
                     {educationElements}
                 </VerticalTimeline>
             </div>
