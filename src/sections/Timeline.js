@@ -83,7 +83,7 @@ function Timeline(){
     
     return (
         <>
-        <section id="Timeline" className="timeline">
+        <section id="Experience" className="timeline">
             <div className="timeline__container">
                 <h1>Professional Experience</h1>
                 <VerticalTimeline layout='1-column-left'>
