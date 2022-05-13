@@ -29,6 +29,17 @@ function mapSVG(name){
     }
 }
 
+function mapTechnologies(technologies){
+    const technologyList = technologies.map((technology) =>
+        <li>{technology}</li>
+    );
+    return(
+        <ul>
+            {technologyList}
+        </ul>
+    )
+}
+
 function Timeline(){
 
     const workElements = [];
@@ -39,7 +50,7 @@ function Timeline(){
             element.isWorkIcon === 'work' ?                
             workElements.push(
             <VerticalTimelineElement
-                key={ element.key }
+                key={ element.id }
                 date={ element.date }
                 dateClassName="date"
                 icon={ mapSVG(element.icon) }
@@ -49,11 +60,12 @@ function Timeline(){
                 <p className="vertical-timeline-element-subtitle">{ element.location }</p>
                 <h3>{ element.role }</h3>
                 <p>{ element.description }</p>
+                {mapTechnologies(element.technologies)}
             </VerticalTimelineElement>)
             :
             educationElements.push(
             <VerticalTimelineElement
-                key={ element.key }
+                key={ element.id }
                 date={ element.date }
                 dateClassName="date"
                 icon={ mapSVG(element.icon) }

@@ -1,7 +1,9 @@
 @import 'variables';
+$techGradient: linear-gradient(10deg, rgba($gradientDarkColor, 0.95) 0%,rgba($gradientLightColor, 0.95) 100%);
+
+
 
 .timeline {
-  margin-bottom: 50px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -10,12 +12,12 @@
   text-align: left;
   color: white;
   line-height: 1;
+  margin-bottom: 5rem;
   
   &__container {
     font-size: 2rem;
     width: 100%;
     max-width: $maxWidthFull;
-    z-index: 1;
     padding: 0 3rem 0 3rem;
     margin-top: 5rem;
 
@@ -29,7 +31,7 @@
       font-size: $h3--size--default;
       margin-top: 15px;
     }
-    p { font-size: $p--size--default * 0.8; }
+    p, li { font-size: $p--size--default * 0.8; }
 
     br {
       margin-bottom: 10em;
@@ -38,6 +40,23 @@
       font-family: 'Lexend Deca', sans-serif;
     }
 
+    ul {
+      margin-block-start: 0.5em;
+      margin-block-end: 0.5em;
+      padding-inline-start: 0px;
+      display: grid;
+      grid-template-columns: auto auto auto auto auto auto auto;
+      justify-content: start;
+      list-style-type: none;
+      text-align: center;
+      li {
+        background: $techGradient;
+        margin: 0.3rem;
+        padding: 0.8rem 1rem 0.8rem;
+        border-radius: 5px;
+      }
+      
+    }
   }
 
   @media (max-width: 70em) {  
@@ -47,7 +66,18 @@
             h1 { font-size: $h1--size--70em; }
             h2 { font-size: $h2--size--70em; }
             h3 { font-size: $h3--size--70em; }
-            p { font-size: $p--size--70em; }
+            ul {
+              grid-template-columns: auto auto auto auto auto;
+            }
+        }
+    } 
+  }
+  @media (max-width: 55em) {  
+    .timeline {
+        &__container {  
+            ul {
+              grid-template-columns: auto auto auto auto;
+            }
         }
     } 
   }
@@ -57,7 +87,10 @@
             h1 { font-size: $h1--size--40em; }
             h2 { font-size: $h2--size--40em; }
             h3 { font-size: $h3--size--40em; }
-            p { font-size: $p--size--40em; }
+            p,li { font-size: $p--size--40em; }
+            ul {
+              grid-template-columns: auto auto auto;
+            }
         }
     } 
   }
@@ -68,10 +101,15 @@
             h1 { font-size: $h1--size--25em; }
             h2 { font-size: $h2--size--25em; }
             h3 { font-size: $h3--size--25em; }
-            p { font-size: $p--size--25em; }
+            p, li { font-size: $p--size--25em; }
+            ul {
+              grid-template-columns: auto auto;
+            }
         }
     } 
   }
+
+
 }
 .vertical-timeline{
   margin: 0;

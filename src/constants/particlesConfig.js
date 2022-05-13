@@ -21,14 +21,7 @@ let particles = {
       },
     },
   },
-  particles: {
-    number: {
-      value: 10,
-      density: {
-          enable: true,
-          value_area: 50,
-      }
-    },  
+  particles: { 
     color: {
       value: "#ffffff",
     },

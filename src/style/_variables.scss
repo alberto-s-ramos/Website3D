@@ -3,8 +3,11 @@ $mainBgColor: radial-gradient(1200px at 130% 170%, rgb(9, 21, 69) 10%, rgb(0, 0,
 
 
 $gradientLightColor: rgb(89, 116, 191);
+
 $gradientDarkColor: rgb(32, 41, 102);
 $titleColor: linear-gradient(280deg, rgb(255, 255, 255) 0%, rgb(192, 198, 248) 0%, $gradientLightColor 100%);
+$titleFooterColor: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 0%, $gradientLightColor 100%);
+
 $bgGradient: linear-gradient(110deg, rgba($gradientDarkColor, 0.4) 0%,rgba($gradientLightColor, 0.4) 100%);
 $btnGradient: linear-gradient(110deg, rgba($gradientDarkColor, 0.95) 0%,rgba($gradientLightColor, 0.95) 100%);
 $bgFooter: linear-gradient(110deg, rgba($gradientDarkColor, 0.25) 0%,rgba($gradientLightColor, 0.24) 100%);
@@ -46,6 +49,12 @@ $emoji_vid--size--25em: 4.5rem;
 
 .customTitle {
     background-image: $titleColor;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.customFooterTitle {
+    background-image: $titleFooterColor;
     color: transparent;
     -webkit-background-clip: text;
 }

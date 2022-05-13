@@ -9,17 +9,26 @@
 
 .footer {
     width: 100%;
-    @extend .flex;
+    margin-top: 10rem;
+    z-index: 100;
+    @extend .flex;    
 
+    h1 {
+        @extend .customFooterTitle;
+    }
     &__container {
         width: 100%;
         @extend .flex;
+        backdrop-filter: blur($bgBlur);
         max-width: $maxWidthFull;
         background: $bgFooter;
-        backdrop-filter: blur($bgBlur * 0.3);
         border-radius: 1rem 1rem 0 0;
-        padding-top: 0.5rem;
+        padding-top: 1rem;
         transition: all 0.7s ease;
+    }
+    
+    &__email {
+        width: $maxWidthFull - 200px;
     }
 
     &__social {
@@ -42,7 +51,7 @@
     }
     
     a.social:hover {
-        transform: translateY(-6px);
+        transform: translateY(-0.6rem);
     }
 }
 
@@ -51,17 +60,34 @@
         &__container {
             max-width: $maxWidthMedium;
         }
+        h1 {  font-size: $h1--size--70em; }
+        &__email {
+            max-width: $maxWidthMedium - 150px;
+        }
+        
     }
 }
 @media (max-width: 40em) {  
     .footer {
         &__social { font-size: $p--size--40em; }
         &__text { font-size: $p--size--40em; }
+        h1 { 
+            font-size: $h1--size--40em; 
+        }
+        &__email {
+            max-width: $maxWidthMedium - 325px;
+        }
     }
 }
 @media (max-width: 25em) {  
     .footer {
         &__social { font-size: $p--size--25em; }
         &__text { font-size: $p--size--25em; }
+        h1 { 
+            font-size: $h1--size--25em;
+        }
+        &__email {
+            width: $maxWidthMedium - 400px;
+        }
     }
 }

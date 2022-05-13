@@ -9,6 +9,7 @@ function Navigation() {
               <li><a  href="#Intro">About</a></li>
               <li><a href="#Timeline">Experience</a></li>
               <li><a href="#Education">Education</a></li>
+              <li><a href="#Contact">Contact</a></li>
           </ul>
         </nav>
     </header>

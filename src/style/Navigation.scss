@@ -1,6 +1,9 @@
 @import "variables";
 
-$bgColor: linear-gradient(110deg, rgba(32, 41, 102, 0.2) 0%,rgba(80, 107, 180, 0.2) 100%);;
+$bgColor: linear-gradient(110deg, rgba(32, 41, 102, 0.2) 0%,rgba(80, 107, 180, 0.2) 100%);
+$height--default: 5rem;
+$height--40em: 4rem;
+$height--25em: 3.5rem;
 
 .header {
     position: absolute;
@@ -14,13 +17,16 @@ $bgColor: linear-gradient(110deg, rgba(32, 41, 102, 0.2) 0%,rgba(80, 107, 180, 0
       padding: 0.9em;
       border-radius: 0 0 1rem 1rem;
       width: 100%;
-      max-width: $maxWidthFull;    
+      max-width: $maxWidthFull; 
+      height: $height--default;
+      max-height: $height--default;  
       background: $bgGradient;
       transition: all 0.7s ease;
       backdrop-filter: blur($bgBlur);
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: center;
+      flex-direction: column;
     
       ul {
         margin: 0;
@@ -31,17 +37,29 @@ $bgColor: linear-gradient(110deg, rgba(32, 41, 102, 0.2) 0%,rgba(80, 107, 180, 0
           list-style: none;
           color: white;
           transition: all 0.5s ease;
-          margin: 0 40px 0 40px;
+          margin: 0 4rem 0 4rem;
           text-decoration: none;
           font-size: $p--size--default;
+          height: $height--default;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:hover{
+            border-bottom: 2px solid rgb(143, 175, 255);
+            a{
+              color: rgb(143, 175, 255);
+            }
+          }
 
           a {
             text-decoration: none;
             color: white;
             transition: 0.5s ease-in-out;
-          }
-          a:hover {
-            color: rgb(143, 175, 255);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
           }
         }
         
@@ -59,9 +77,31 @@ $bgColor: linear-gradient(110deg, rgba(32, 41, 102, 0.2) 0%,rgba(80, 107, 180, 0
     
   }
   @media (max-width: 40em) {  
+    .header {
+      &__nav {
+        max-height: $height--40em;
+        ul {
+          li { 
+            margin: 0 3rem 0 3rem;
+            max-height: $height--40em;
+          }
+        }
+      }
+    }
     a { font-size: $p--size--40em; }
   }
 
   @media (max-width: 25em) {  
+    .header {
+      &__nav {
+        max-height: $height--25em;
+        ul {
+          li { 
+            margin: 0 1.4rem 0 1.4rem;
+            max-height: $height--25em;
+          }
+        }
+      }
+    }
     a { font-size: $p--size--25em; }
   }
