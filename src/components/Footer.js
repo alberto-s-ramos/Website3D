@@ -14,7 +14,7 @@ function Footer(){
     <footer id="Contact" className='footer animate'>
         <div className='footer__container'>
             <div className='footer__email'>
-                <h1 className='animate'>Let's get in touch</h1>
+                <h2 className='animate'>Let's get in touch</h2>
                 <Email/>
             </div>
             <div className="footer__social">

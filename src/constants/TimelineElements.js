@@ -40,8 +40,8 @@ let timelineElements = [
         title: "Aalto University",
         location: "Helsinki, Finland",
         isWorkIcon: "school",
-        role: "MSc in Computer Science - Erasmus Program",
-        description: "One semester abroad",
+        role: "MSc in Computer Science - Erasmus Programme",
+        description: "Exchange Semester",
         date: "Sep 2019 - Dec 2019",
         bgColor: { 
             background: "rgba(255, 255, 255, 0.15)",

@@ -1,5 +1,5 @@
 let particles = {
-  fpsLimit: 120,
+  fpsLimit: 30,
   interactivity: {
     events: {
       onClick: {
