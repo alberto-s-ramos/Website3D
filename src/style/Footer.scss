@@ -11,6 +11,7 @@
     width: 100%;
     margin-top: 10rem;
     @extend .flex;   
+
     
     h2 { 
         @extend .customTitle;
@@ -28,6 +29,7 @@
         border-radius: 1rem 1rem 0 0;
         padding-top: 2rem;
         transition: all 0.7s ease;
+        overflow: hidden;
     }
     
     &__email {

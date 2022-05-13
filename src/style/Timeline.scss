@@ -1,9 +1,9 @@
 @import 'variables';
 
 $techGradient: linear-gradient(10deg, rgba($gradientDarkColor, 0.95) 0%,rgba($gradientLightColor, 0.95) 100%);
-
-
 $bgGradientLight: linear-gradient(110deg, rgba(40, 52, 129, 0.4) 0%,rgba(99, 130, 215, 0.4) 100%);
+$bgIcon: linear-gradient(110deg, rgba(40, 52, 129, 0.2) 0%,rgba(99, 130, 215, 0.3) 100%);
+$iconBorderColor: rgba(171, 184, 239, 0.5);
 
 .timeline {
   width: 100%;
@@ -141,14 +141,14 @@ $bgGradientLight: linear-gradient(110deg, rgba(40, 52, 129, 0.4) 0%,rgba(99, 130
   background: $bgGradientLight;
 }
 
-
 .vertical-timeline::before { opacity: 0; }
 
 .vertical-timeline-element-icon {
   width: 50px;
   height: 50px;
   border-radius: 8px;
-  box-shadow: 0 0 0 1.5px  rgb(195, 195, 218), 0px 0px 20px 0 rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 0 0.1rem  $iconBorderColor, 0px 0px 20px 0 rgba(255, 255, 255, 0);
+  background: $bgIcon !important;
 }
 
 .vertical-timeline-element-content-arrow{

@@ -31,7 +31,7 @@ function Footer(){
             <p className="footer__text">
                 © {new Date().getFullYear()} - albertosilveiramos@gmail.com
             </p>
-            </div>
+        </div>
     </footer>
     );
 };
