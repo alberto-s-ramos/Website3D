@@ -11,7 +11,6 @@
     width: 100%;
     margin-top: 10rem;
     @extend .flex;   
-
     
     h2 { 
         @extend .customTitle;
@@ -24,7 +23,7 @@
         @extend .flex;
         background: $bgGradient;
         z-index: 99999;
-        backdrop-filter: blur($bgBlur);
+        backdrop-filter: blur(8px);
         max-width: $maxWidthFull - 50px;
         border-radius: 1rem 1rem 0 0;
         padding-top: 2rem;

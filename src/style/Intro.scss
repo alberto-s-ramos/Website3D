@@ -50,14 +50,15 @@
         grid-template-columns: auto 88%;
         width: 100%;
         line-height: 1;
-        column-gap: 0.5rem;
+        column-gap: 1rem;
         margin-bottom: 0.5rem;
     }
 
     #emoji_vid {
         border-radius: 10px; 
         opacity: 0.95;
-        height: $emoji_vid--size--default;
+        background-color: white;
+        aspect-ratio: attr(width) attr(height);
     }
 }
 
@@ -73,28 +74,37 @@
             h1:nth-child(1) { margin-bottom: -15px; }
             p { font-size: $p--size--70em; }
         }
-        #emoji_vid { height: $emoji_vid--size--70em; }
+        &__titleArea { column-gap: 0.5rem; }
+        #emoji_vid { 
+            width: $emoji_vid--size--70em;
+            height: $emoji_vid--size--70em;
+        }
     } 
+    
 }
 
 @media (max-width: 40em) {
     .landingPage {
-
         &__container {
             h1 { font-size: $h1--size--40em; }
             p { font-size: $p--size--40em; }
         }
-        #emoji_vid { height: $emoji_vid--size--40em; }
-    } 
+        #emoji_vid { 
+            width: $emoji_vid--size--40em;
+            height: $emoji_vid--size--40em;
+        }
 }
 
 @media (max-width: 25em) {
     .landingPage {
         &__container {
-
             h1 { font-size: $h1--size--25em; }
             p { font-size: $p--size--25em; }
         }
-        #emoji_vid { height: $emoji_vid--size--25em; }
+        #emoji_vid { 
+            width: $emoji_vid--size--25em;
+            height: $emoji_vid--size--25em;
+        }
+    }
     } 
 }

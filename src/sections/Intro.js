@@ -22,7 +22,7 @@ export const Intro = () => {
             <div className="landingPage__container">
                 <div className="landingPage__text">
                     <div className="landingPage__titleArea">
-                        <video id="emoji_vid" autoPlay loop muted >
+                        <video id="emoji_vid" width={85} height={90} autoPlay loop muted >
                             <source src="emoji.mp4" type="video/mp4" />
                         </video>
                         <h1>Hello, I'm <span className='title animate'>Alberto</span>, a <br/>
