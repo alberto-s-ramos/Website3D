@@ -7,15 +7,16 @@
     flex-direction: column;
 }
 
-.landingPage{
+.landingPage {
     @extend .defaultFlexLayout;
     color: white;
     width: 100%;
     height: 65vH;
     margin-top: 8rem;
+    visibility: hidden;
 
-    &__visible {
-        visibility: visible;
+    &--visible {
+        visibility: visible !important;
     }
     
     &__container {

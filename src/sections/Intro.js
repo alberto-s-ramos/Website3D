@@ -1,11 +1,13 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useRef} from 'react'
 import Typical from 'react-typical'
 import "../style/Intro.scss";
 import { CustomButton } from '../components/CustomButton';
 
 export const Intro = () => {    
+    const intro = useRef();
 
     useEffect(() => {
+        intro.current.classList.add('landingPage--visible');
         document.getElementById('emoji_vid').play();
     },[])
 
@@ -18,7 +20,7 @@ export const Intro = () => {
     ]
 
     return (
-        <section id="Intro" className="landingPage animate">
+        <section id="Intro" ref={intro} className="landingPage animate">
             <div className="landingPage__container">
                 <div className="landingPage__text">
                     <div className="landingPage__titleArea">
