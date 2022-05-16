@@ -30,8 +30,8 @@ function mapSVG(name){
 }
 
 function mapTechnologies(technologies){
-    const technologyList = technologies.map((technology) =>
-        <li>{technology}</li>
+    const technologyList = technologies.map((technology, index) =>
+        <li key={index}>{technology}</li>
     );
     return(
         <ul>
