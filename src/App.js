@@ -28,16 +28,20 @@ function App() {
   })
 
   return (
+      <>
+      <Navigation/>
       <main className="app">
-        <Navigation/>
+        <div className="app__container">
           <Intro/>
           <Timeline/>
           <Footer/>
+        </div>
+      </main>
         <BgParticles 
           className="particles"
           particles={particles}
         />
-      </main>
+      </>
   );
 }
 

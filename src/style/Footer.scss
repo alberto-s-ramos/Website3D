@@ -24,7 +24,6 @@
         background: $bgGradient;
         z-index: 99999;
         backdrop-filter: blur(8px);
-        max-width: $maxWidthFull - 50px;
         border-radius: 1rem 1rem 0 0;
         padding-top: 2rem;
         transition: all 0.7s ease;
@@ -61,9 +60,6 @@
 
 @media (max-width: 70em) {  
     .footer {
-        &__container {
-            max-width: $maxWidthMedium - 50px;
-        }
         h2 {  font-size: $h2--size--70em * 1.1; }
         &__email {
             max-width: $maxWidthMedium - 150px;
@@ -73,9 +69,6 @@
 }
 @media (max-width: 40em) {  
     .footer {
-        &__container {
-            max-width: $maxWidthMedium - 150px;
-        }
         &__social { font-size: $p--size--40em; }
         &__text { font-size: $p--size--40em; }
         h2 { 

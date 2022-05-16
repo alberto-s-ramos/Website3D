@@ -25,7 +25,6 @@
         align-items: flex-start;
         justify-items: center;
         width: 100%;
-        max-width: $maxWidthFull;
         padding: 0 3rem 0 3rem;
     }
 
@@ -69,8 +68,6 @@
             grid-template-columns: 100%;
             grid-template-rows: 50% 50%;
             justify-items: start;
-            max-width: $maxWidthMedium;
-
             h1 { font-size: $h1--size--70em; }
             h1:nth-child(1) { margin-bottom: -15px; }
             p { font-size: $p--size--70em; }
