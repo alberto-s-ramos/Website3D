@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.76c9490e.chunk.css",
+    "main.css": "/static/css/main.be334338.chunk.css",
     "main.js": "/static/js/main.a4b4ea1a.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.6e3528e2.js",
     "static/css/2.038a8789.chunk.css": "/static/css/2.038a8789.chunk.css",
     "static/js/2.13d1c3d1.chunk.js": "/static/js/2.13d1c3d1.chunk.js",
     "static/js/3.4d4b8460.chunk.js": "/static/js/3.4d4b8460.chunk.js",
     "index.html": "/index.html",
-    "precache-manifest.00335981346849832ba7db9262bb4a1c.js": "/precache-manifest.00335981346849832ba7db9262bb4a1c.js",
+    "precache-manifest.ec63d25281c145f254db1f1ad272a473.js": "/precache-manifest.ec63d25281c145f254db1f1ad272a473.js",
     "service-worker.js": "/service-worker.js",
     "static/js/2.13d1c3d1.chunk.js.LICENSE.txt": "/static/js/2.13d1c3d1.chunk.js.LICENSE.txt",
     "static/media/Aalto.716ea701.svg": "/static/media/Aalto.716ea701.svg",
@@ -21,7 +21,7 @@
     "static/js/runtime-main.6e3528e2.js",
     "static/css/2.038a8789.chunk.css",
     "static/js/2.13d1c3d1.chunk.js",
-    "static/css/main.76c9490e.chunk.css",
+    "static/css/main.be334338.chunk.css",
     "static/js/main.a4b4ea1a.chunk.js"
   ]
 }
